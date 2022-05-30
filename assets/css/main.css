@@ -1,0 +1,545 @@
+#high {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-radius: 100%;
+  border-left: rgba(255, 255, 255, 0) solid 1px transparent;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.quem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: white;
+  height: 100vh;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.quem h2 {
+  font-size: 45px;
+  padding: 20px;
+}
+
+.quem .escolha {
+  min-width: 400px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.quem .habilidades {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.quem .habilidades div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.quem .habilidades svg {
+  padding: 15px;
+}
+
+.quem .habilidades .css {
+  height: 100px;
+}
+
+.quem .habilidades .html {
+  height: 100px;
+}
+
+.quem .habilidades .js {
+  height: 100px;
+}
+
+.quem .nome {
+  min-width: 400px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.quem .nome div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.quem .nome .contato {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.quem .nome .contato img {
+  width: 50px;
+  border: 1px white solid;
+  border-radius: 10px;
+}
+
+.quem .nome .contato a {
+  margin: 0px 0px 15px 15px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: white;
+}
+
+.quem .nome .contato h3 {
+  margin-top: 5px;
+}
+
+#jesusf {
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: linear-gradient(150deg, #DADADA 90%, white);
+}
+
+#jesusf a {
+  text-decoration: none;
+  color: black;
+}
+
+#jesusf svg {
+  width: 100px;
+  height: 100px;
+}
+
+#jesusf h2 {
+  font-size: 75px;
+  text-shadow: black 5px 5px 10px;
+  color: #C21370;
+}
+
+#jesusf div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#jesusf .text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#jesusf .text p {
+  font-size: 25px;
+  text-align: center;
+}
+
+#jesusf .img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#jesusf .img img {
+  max-width: 600px;
+}
+
+#Windt {
+  display: none;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #1a1a1a;
+}
+
+#Windt a {
+  text-decoration: none;
+  color: black;
+}
+
+#Windt svg {
+  width: 100px;
+  height: 100px;
+}
+
+#Windt h2 {
+  font-size: 75px;
+  text-shadow: black 5px 5px 10px;
+  text-align: center;
+  color: #fc6404;
+  margin-top: 45px;
+}
+
+#Windt div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#Windt .text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#Windt .text p {
+  font-size: 25px;
+  text-align: center;
+  color: #fc6404;
+}
+
+#Windt .img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#Windt .img img {
+  max-width: 600px;
+}
+
+.sobre {
+  background-image: -webkit-gradient(linear, right top, left top, from(#000000), color-stop(#070103), color-stop(#0c0107), color-stop(#10030d), to(#120412));
+  background-image: linear-gradient(to left, #000000, #070103, #0c0107, #10030d, #120412);
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sobre .perfil {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.sobre div {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+}
+
+.sobre div .chamada {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sobre div .chamada p {
+  font-size: 20px;
+  background: -webkit-linear-gradient(#e9e9e9, #2c2c2c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sobre div h2 {
+  font-size: 65px;
+  color: #aca8ac;
+  text-align: center;
+  justify-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding-left: 20px;
+}
+
+.sobre div label {
+  background: -webkit-linear-gradient(#811566, #52324a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sobre div .botoes {
+  width: 50%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.sobre div .botoes button {
+  margin: 20px;
+  padding: 20px;
+  font-size: 25px;
+  border: 1px #811566 solid;
+  text-decoration: none;
+  color: white;
+  background-color: #00000000;
+  border-radius: 5px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+}
+
+.sobre div a {
+  margin: 20px;
+  padding: 20px;
+  font-size: 25px;
+  border: 1px #811566 solid;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.sobre div p {
+  margin: 20px;
+  font-size: 45px;
+  color: #aca8ac;
+}
+
+* {
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+.container {
+  max-width: 80vw !important;
+  margin: 0 auto;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none !important;
+  position: absolute;
+  width: 80%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 25px;
+  padding: 0px 30px;
+  border-radius: 10px 50px;
+}
+
+body {
+  background-image: -webkit-gradient(linear, right top, left top, from(#000000), color-stop(#070103), color-stop(#0c0107), color-stop(#10030d), to(#120412));
+  background-image: linear-gradient(to left, #000000, #070103, #0c0107, #10030d, #120412);
+  font-family: roboto;
+}
+
+body h1 {
+  font-family: roboto;
+  color: white;
+  font-size: 2em;
+}
+
+#losango {
+  width: 50px;
+  height: 50px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin: 20px;
+  border: 1px solid black;
+  background-image: linear-gradient(25deg, #D43BC2, #D44B46, #CFD450, #26D463, #8531D4, #8531D4);
+  -webkit-box-shadow: 1px 1px 5px 1px #201f1f;
+          box-shadow: 1px 1px 5px 1px #201f1f;
+}
+
+nav {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  text-align: end;
+  font-size: 20px;
+  font-family: robotobold;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+/*# sourceMappingURL=main.css.map */

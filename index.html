@@ -10,7 +10,7 @@
     <script  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"  crossorigin="anonymous"></script>
     <script  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"  integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"  crossorigin="anonymous"></script>
     <script  src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"  integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"  crossorigin="anonymous"></script>
-    <script src='main.js'></script>
+    <script src="assets/js/index.js"></script>
     <style>
         @font-face {
             font-family: roboto;
@@ -56,13 +56,16 @@
         <div>
             <p>Eu posso te ajudar!</p>
             <div class="botoes">
-                <button href="#">Sobre Mim</a>
-                <button href="#">Projetos</a>
+                <button id="sobreButton" onclick="sobreButton()">Sobre Mim</a>
+                <button id="projetosButton" href="#">Projetos</a>
             </div>
         </div> 
     </section>
-    
     <section class="container col" id="projetos">
+        <div class="forte">
+            <p class="ola1"> &#9735; Carrossel criado Utilizando Bootstrap</p>
+        </div>
+        
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -82,26 +85,51 @@
                             <div class="img">
                                 <img src="assets\images\mackup-right.png" width="auto" height="auto">
                             </div> 
-                            <svg
-                                viewBox="0 0 20.633 20.633" style="enable-background:new 0 0 20.633 20.633;" xml:space="preserve">
-                            <g>
-                                <path d="M15.621,9.844l-9.65-9.649C5.842,0.064,5.674,0,5.5,0C5.329,0,5.157,0.064,5.027,0.195L5.014,0.207
-                                    C4.888,0.334,4.817,0.506,4.817,0.682v4.682c0,0.178,0.071,0.348,0.197,0.471l4.481,4.482l-4.481,4.479
-                                    c-0.126,0.126-0.197,0.294-0.197,0.475v4.68c0,0.18,0.071,0.354,0.197,0.475l0.013,0.01c0.124,0.127,0.294,0.197,0.473,0.197
-                                    s0.348-0.07,0.474-0.197l9.647-9.646C15.881,10.531,15.881,10.104,15.621,9.844z"/>
-                            </svg>
-                                            </div>
+                        </div>
                     </a>
-                        
-                    
                 </section>
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="..." alt="Second slide">
+                <section id="mediC">
+                    <a href="https://google.com.br">
+                        <div>
+                            <div class="col text">
+                                <div>
+                                    <h2>Medicenter</h2>
+                                </div>
+                                <div>
+                                    <p>Tema WordPress para Clínicas Médicas de Saúde.</p>
+                                </div>
+                            </div>
+                            <div class="img">
+                                <img src="assets\images\mackup-right.png" width="auto" height="auto">
+                            </div> 
+                        </div>
+                    </a>
+                </section>
+              
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="..." alt="Third slide">
+                <section id="Windt">
+                    <a href="https://google.com.br">
+                        <div>
+                            <div class="col text">
+                                <div>
+                                    <h2>Wind Telecom</h2>
+                                </div>
+                                <div>
+                                    <p>Baseado em sites telecom, conta com estruturas animadas coloridas e atraentes. </p>
+                                </div>
+                            </div>
+                            <div class="img">
+                                <img src="assets\images\mackup-right.png" width="auto" height="auto">
+                            </div> 
+                        </div>
+                    </a>
+        
+                </section>
               </div>
+            
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -113,34 +141,7 @@
             </a>
           </div>
         
-        <section id="Windt">
-            <a href="https://google.com.br">
-                <div>
-                    <div class="col text">
-                        <div>
-                            <h2>Wind Telecom</h2>
-                        </div>
-                        <div>
-                            <p>Baseado em sites telecom, conta com estruturas animadas coloridas e atraentes. </p>
-                        </div>
-                    </div>
-                    <div class="img">
-                        <img src="assets\images\mackup-right.png" width="auto" height="auto">
-                    </div> 
-                    <svg
-                        viewBox="0 0 20.633 20.633" style="enable-background:new 0 0 20.633 20.633;" xml:space="preserve">
-                    <g>
-                        <path d="M15.621,9.844l-9.65-9.649C5.842,0.064,5.674,0,5.5,0C5.329,0,5.157,0.064,5.027,0.195L5.014,0.207
-                            C4.888,0.334,4.817,0.506,4.817,0.682v4.682c0,0.178,0.071,0.348,0.197,0.471l4.481,4.482l-4.481,4.479
-                            c-0.126,0.126-0.197,0.294-0.197,0.475v4.68c0,0.18,0.071,0.354,0.197,0.475l0.013,0.01c0.124,0.127,0.294,0.197,0.473,0.197
-                            s0.348-0.07,0.474-0.197l9.647-9.646C15.881,10.531,15.881,10.104,15.621,9.844z"/>
-                    </svg>
-                                    </div>
-            </a>
-
-            </a>
-
-        </section>
+        
     </section>
     <section class="quem container">
             <div class="nome">
@@ -166,7 +167,7 @@
                 </div>
             </div>
             <div class="escolha">
-                <h2>Por quê Me Escolher? </h2>
+                <h2>Por quê me Escolher? </h2>
                 <p>Posso oferecer o baixo custo de um desenvolvedor iniciante enquanto entrego soluções eficientes para o seu problema. </p>
             </div>
             <div class="habilidades">
@@ -186,4 +187,12 @@
 
     </section>
 </body>
+<script>
+    var ola = String(document.getElementsByClassName("ola1")[0].innerHTML);
+        console.log(ola);
+    function sobreButton(){
+        var sobreButton = document.getElementById("sobreButton");
+            console.log(sobreButton);
+    }
+</script>
 </html>

@@ -8,8 +8,24 @@
     flex: 1
     
 }
+.voltar{
+    position: absolute;
+    z-index: 11;
+    background-color: rgba(255, 255, 0, 0);
+    width: 45px;
+    color: white;
+    border: 1px white solid;
+    border-radius: 100%;
+    padding: 5px;
+    height: 45px;
+    left: 0;
+    top:20%;
+    box-sizing: content-box;
+
+}
 .quem{
-    display: flex;
+    position: relative;
+    display: none;
     align-content: space-around;
     justify-content: center;
     flex-direction: row;
@@ -25,6 +41,7 @@
         min-width: 400px;
         flex: 1;
     }
+    
     .habilidades{
         display: flex;
         flex-direction: column;
@@ -82,14 +99,17 @@
 #mediC{
     --azul-fundo: #5693b1;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-    min-height: 380px;
+    min-height: 70vh;
+    max-width: 20vw;
     flex-direction: column;
     background-color: var(--azul-fundo);
-
+   
     a{
         text-decoration: none;
         color: black
@@ -130,7 +150,7 @@
         display: flex;
         justify-content: flex-end;
         img{
-            max-width: 600px;
+            max-width: 300px;
         
         }
     }
@@ -143,7 +163,8 @@
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-    min-height: 380px;
+    min-height: 70vh;
+    max-width: 20vw;
     flex-direction: column;
     background-color: var(--preto-fundo); 
     a{
@@ -151,8 +172,8 @@
         color: black
     }
     svg{
-    width: 100px;
-    height: 100px;
+    width: auto;
+    height: auto;
 }
     h2{
         font-size: 75px;
@@ -186,7 +207,7 @@
         display: flex;
         justify-content: flex-end;
         img{
-            max-width: 600px;
+            max-width: 300px;
         
         }
     }
@@ -263,7 +284,8 @@
 #Windt{
     --cinza-fundo: rgb(26, 26, 26);
     padding: 20px;
-    min-height: 380px;
+    min-height: 70vh;
+    max-width: 20vw;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -314,22 +336,61 @@
         display: flex;
         justify-content: flex-end;
         img{
-            max-width: 600px;
+            max-width: 300px;
         
         }
     }
 
 }
+
+
+
+#carouselExampleControls{
+    
+    align-self: center;
+}
+.carousel{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.carousel-inner{
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+}
+.carousel-item{
+    min-width: 35vw;
+}
 #projetos{
-    width: 100vw;
-    height: 100vh;
+    width: auto;
+    height: auto;
     display: none;
+    justify-content: space-around;
     .carousel{
         padding: 0px;
         box-shadow: 1px 3px 10px rgb(78, 78, 78);
     }
 
     }
+    .info-bar{
+        a{
+            text-decoration: none;
+            color: purple;
+            font-size: 45px;
+        }
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        border: white solid 1px;
+        border-radius: 15px;
+        padding: 15px;
+        div{
+            color: white;   
+            
+
+        }}
     .forte{
         p{
             font-size: 45px;
@@ -429,7 +490,8 @@
     border: 0;
     box-sizing: border-box;
     padding: 0;
-}
+    
+}   
 .container{
     max-width: 80vw !important;
     margin: 0 auto;

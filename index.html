@@ -56,12 +56,13 @@
         <div>
             <p>Eu posso te ajudar!</p>
             <div class="botoes">
-                <button id="sobreButton" onclick="sobreButton()">Sobre Mim</a>
-                <button id="projetosButton" onclick="sobreProjetos()">Projetos</a>
+                <button id="sobreBtn" onclick="sobreBtn()">Sobre Mim</a>
+                <button id="projetosBtn" onclick="projetosBtn()">Projetos</a>
             </div>
         </div> 
     </section>
     <section class="container col" id="projetos">
+        <button class="voltar" onclick="voltarBtn()"><img src="/assets/images/svg/leftArrow.svg" width="35px"></button>    
         <div class="forte">
             <p class="ola1"> &#9735; Carrossel criado Utilizando Bootstrap</p>
         </div>
@@ -141,10 +142,25 @@
             </a>
           </div>
         
-        
+        <div class="info-bar">
+            <div>
+                <img src="/assets/images/svg/projetos.svg">
+                <p>9</p>
+                <h3>Projetos</h3>
+            </div>
+            <div>
+                <a href="#">Tenho Interesse!</a>
+            </div>
+            <div>
+                <img src="/assets/images/svg/experiencia.svg">
+                <p>Junior</p>
+                <h3>Experiência</h3>
+            </div>
+        </div>
     </section>
     <section class="quem container">
-            <div class="nome">
+        <button class="voltar" onclick="voltarBtn()"><img src="/assets/images/svg/leftArrow.svg" width="35px"></button>    
+        <div class="nome">
                 <h2>Quem Sou Eu?</h2>
                 <p>Meu nome é Eugênio Júnior, cursando Ciências da Computação e estudante de desenvolvimento Web por conta própria. </p>
                 <div class="contato">
@@ -188,15 +204,39 @@
     </section>
 </body>
 <script>
-    var ola = String(document.getElementsByClassName("ola1")[0].innerHTML);
-        console.log(ola);
-    function sobreButton(){
-        var sobreButton = document.getElementById("sobreButton");
-            console.log(sobreButton);
+
+    var quemDisplay = document.getElementsByClassName("quem")[0];
+    var sobreDisplay = document.getElementsByClassName("sobre")[0];
+    var projetosDisplay = document.getElementById("projetos");
+    
+    quemDisplay.style.display = "none"
+    
+    function sobreBtn(){
+        if (quemDisplay.style.display == "none"){
+            quemDisplay.style.display = "flex"
+            sobreDisplay.style.display = "none"
+        } else {
+            quemDisplay.style.display = "none"
+        }
+    
     }
-    function sobreProjetos(){
-        var sobreProjetos =  document.getElementById("projetosButton");
-            console.log(sobreProjetos)
+    function voltarBtn(){
+        if (sobreDisplay.style.display = "none"){
+            sobreDisplay.style.display = "flex"
+            quemDisplay.style.display = "none"
+            projetosDisplay.style.display = "none"
+        }else{
+            sobreDisplay.style.display = "none"
+        }
+    }
+    function projetosBtn(){
+        if (projetosDisplay.style.display = "none"){
+            projetosDisplay.style.display = "flex";
+            sobreDisplay.style.display = "none"
+        }else{
+            projetosDisplay.style.display = "none"
+        }
+      
     }
 </script>
 </html>

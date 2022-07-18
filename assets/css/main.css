@@ -19,10 +19,25 @@
           flex: 1;
 }
 
+.voltar {
+  position: absolute;
+  z-index: 11;
+  background-color: rgba(255, 255, 0, 0);
+  width: 45px;
+  color: white;
+  border: 1px white solid;
+  border-radius: 100%;
+  padding: 5px;
+  height: 45px;
+  left: 0;
+  top: 20%;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
 .quem {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  position: relative;
+  display: none;
   -ms-flex-line-pack: distribute;
       align-content: space-around;
   -webkit-box-pack: center;
@@ -131,6 +146,13 @@
 #mediC {
   --azul-fundo: #5693b1;
   padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -139,11 +161,9 @@
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 5px;
-  min-height: 380px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  min-height: 70vh;
+  max-width: 20vw;
+  flex-direction: column;
   background-color: var(--azul-fundo);
 }
 
@@ -213,7 +233,7 @@
 }
 
 #mediC .img img {
-  max-width: 600px;
+  max-width: 300px;
 }
 
 #jesusf {
@@ -227,7 +247,8 @@
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 5px;
-  min-height: 380px;
+  min-height: 70vh;
+  max-width: 20vw;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -241,8 +262,8 @@
 }
 
 #jesusf svg {
-  width: 100px;
-  height: 100px;
+  width: auto;
+  height: auto;
 }
 
 #jesusf h2 {
@@ -304,7 +325,7 @@
 }
 
 #jesusf .img img {
-  max-width: 600px;
+  max-width: 300px;
 }
 
 .things > .content {
@@ -377,7 +398,8 @@
 #Windt {
   --cinza-fundo: rgb(26, 26, 26);
   padding: 20px;
-  min-height: 380px;
+  min-height: 70vh;
+  max-width: 20vw;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -460,19 +482,81 @@
 }
 
 #Windt .img img {
-  max-width: 600px;
+  max-width: 300px;
+}
+
+#carouselExampleControls {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.carousel {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.carousel-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carousel-item {
+  min-width: 35vw;
 }
 
 #projetos {
-  width: 100vw;
-  height: 100vh;
+  width: auto;
+  height: auto;
   display: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 #projetos .carousel {
   padding: 0px;
   -webkit-box-shadow: 1px 3px 10px #4e4e4e;
           box-shadow: 1px 3px 10px #4e4e4e;
+}
+
+.info-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border: white solid 1px;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.info-bar a {
+  text-decoration: none;
+  color: purple;
+  font-size: 45px;
+}
+
+.info-bar div {
+  color: white;
 }
 
 .forte p {

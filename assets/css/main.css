@@ -1,3 +1,10 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 #high {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,8 +59,24 @@
 }
 
 .quem #barra-superior-sobre {
-  background-color: yellow;
+  background-color: #111111;
   margin: 0;
+}
+
+.quem #barra-superior-sobre h2 {
+  background: -webkit-linear-gradient(#811566, #52324a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 45px;
+  margin: 0px;
+  padding: 20px;
+}
+
+.quem .home_img, .quem #barra-superior-sobre, .quem .habilidades {
+  border-bottom: #25001f solid 5px;
+  border-top: #25001f solid 5px;
+  border-left: #25001f solid 10px;
+  border-right: #25001f solid 10px;
 }
 
 .quem .home_img {
@@ -61,7 +84,13 @@
   display: -ms-flexbox;
   display: flex;
   width: 80vw;
-  background-color: #26D463;
+  background-color: #111111;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .quem .home_img .home_blob-img {
@@ -76,11 +105,6 @@
   border-radius: 100%;
 }
 
-.quem h2 {
-  font-size: 45px;
-  padding: 20px;
-}
-
 .quem .info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -89,7 +113,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-top: 5px;
 }
 
 .quem .habilidades {
@@ -100,8 +123,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #26D463;
-  margin: 5px;
+  background-color: #111111;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -132,12 +154,39 @@
   height: 100px;
 }
 
+.quem .nome div::before {
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 2px;
+  left: 0%;
+  margin: 0px;
+  top: 0%;
+  width: 80px;
+  background-color: #bdbcbc;
+  content: "";
+  -webkit-box-shadow: #ffffff 1px 1px 5px 1px;
+          box-shadow: #ffffff 1px 1px 5px 1px;
+}
+
+.quem .nome div::after {
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 80px;
+  left: 0%;
+  margin: 0px;
+  top: 0%;
+  width: 2px;
+  background-color: #bdbcbc;
+  content: "";
+  -webkit-box-shadow: #ffffff 1px 1px 5px 1px;
+          box-shadow: #ffffff 1px 1px 5px 1px;
+}
+
 .quem .nome {
   min-width: 400px;
-  background-color: #26D463;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  padding: 0px 50px;
   margin: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -146,15 +195,37 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: left;
+  text-align: center;
   font-family: type;
 }
 
 .quem .nome p {
   width: 440px;
+  font-size: 20px;
+}
+
+.quem .nome div {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.quem .nome h2 {
+  font-size: 45px;
+  position: relative;
+}
+
+.quem .nome h2::before {
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 2px;
+  bottom: 0%;
+  right: 25%;
+  left: 25%;
+  width: 220px;
+  background-color: #bdbcbc;
+  content: "";
 }
 
 .quem .nome div {
@@ -640,6 +711,7 @@ aside a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -652,10 +724,18 @@ aside a {
           flex-direction: row;
 }
 
-.sobre #logo {
+.sobre .logo {
+  position: absolute;
+  z-index: 2;
+  width: 450px;
+}
+
+.sobre .blur {
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
   position: absolute;
   z-index: 1;
-  max-width: 350px;
+  width: 450px;
 }
 
 .sobre .perfil h2::after {

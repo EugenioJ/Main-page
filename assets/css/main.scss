@@ -65,7 +65,6 @@ $color-secondary-border:#ffffff;
         display: flex;
         width: 80vw;
         background-color: #111111;
-        
         align-items: flex-start;
         justify-content: space-evenly;
         .home_blob-img{
@@ -77,13 +76,17 @@ $color-secondary-border:#ffffff;
             width: 320px;
         
         }
-       
+        .social{
+            display: flex;
+            flex-direction: row;
+            img{
+                width: 15px;
+            }
+            div{
+                padding: 0px 5px
+            } 
+        }
     }
-    img{
-        border-radius: 100%;
-
-    }
-   
     .info{
         display: flex;
         flex-direction: row;
@@ -168,7 +171,7 @@ $color-secondary-border:#ffffff;
             background-color: #bdbcbc;
             content: "";
         }
-    
+
     div{
         flex: 1;
     }
@@ -768,12 +771,6 @@ nav{
         font-size: 20px;
         font-family: robotobold;
         flex:1;
-        
-        
-        
-        
-        
-        
         }
         
 }

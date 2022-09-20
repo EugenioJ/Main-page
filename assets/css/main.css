@@ -59,24 +59,16 @@
 }
 
 .quem #barra-superior-sobre {
-  background-color: #111111;
   margin: 0;
 }
 
 .quem #barra-superior-sobre h2 {
-  background: -webkit-linear-gradient(#811566, #52324a);
+  background: #f8a830;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 45px;
+  font-size: 3em;
   margin: 0px;
   padding: 20px;
-}
-
-.quem .home_img, .quem #barra-superior-sobre, .quem .habilidades {
-  border-bottom: #25001f solid 5px;
-  border-top: #25001f solid 5px;
-  border-left: #25001f solid 10px;
-  border-right: #25001f solid 10px;
 }
 
 .quem .home_img {
@@ -84,7 +76,6 @@
   display: -ms-flexbox;
   display: flex;
   width: 80vw;
-  background-color: #111111;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -105,10 +96,31 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0em 1em;
+  padding-bottom: 10px;
+}
+
+.quem .home_img .social a {
+  margin: 5px;
+}
+
+.quem .home_img .social #cv {
+  font-family: roboto;
+  padding: 3px 1em;
+  margin: 0px;
+  border-radius: 100px;
+  background-color: #f8a830;
 }
 
 .quem .home_img .social img {
@@ -117,6 +129,36 @@
 
 .quem .home_img .social div {
   padding: 0px 5px;
+}
+
+.quem .home_img .social::after {
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 80px;
+  right: 0%;
+  margin: 0px;
+  bottom: 0%;
+  width: 2px;
+  background-color: #bdbcbc;
+  content: "";
+  -webkit-box-shadow: #ffffff 1px 1px 5px 1px;
+          box-shadow: #ffffff 1px 1px 5px 1px;
+}
+
+.quem .home_img .social::before {
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 2px;
+  right: 0%;
+  margin: 0px;
+  bottom: 0%;
+  width: 80px;
+  background-color: #bdbcbc;
+  content: "";
+  -webkit-box-shadow: #ffffff 1px 1px 5px 1px;
+          box-shadow: #ffffff 1px 1px 5px 1px;
 }
 
 .quem .info {
@@ -137,7 +179,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #111111;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -200,7 +241,7 @@
 
 .quem .nome {
   min-width: 400px;
-  padding: 0px 50px;
+  color: #aca8ac;
   margin: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -742,11 +783,15 @@ aside a {
   position: absolute;
   z-index: 2;
   width: 450px;
+  display: none;
+  -webkit-filter: drop-shadow(#FFD700 1px 1px 3px);
+          filter: drop-shadow(#FFD700 1px 1px 3px);
 }
 
 .sobre .blur {
   -webkit-filter: blur(20px);
           filter: blur(20px);
+  display: none;
   position: absolute;
   z-index: 1;
   width: 450px;
@@ -882,7 +927,7 @@ aside a {
 }
 
 .sobre div h2 {
-  font-size: 45px;
+  font-size: 3em;
   color: #aca8ac;
   text-align: center;
   justify-self: flex-end;
@@ -892,13 +937,13 @@ aside a {
 }
 
 .sobre div label {
-  background: -webkit-linear-gradient(#811566, #52324a);
+  background: #f8a830;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .sobre div .botoes {
-  margin-top: 20px;
+  margin-top: 1em;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -912,28 +957,29 @@ aside a {
 .sobre div .botoes button {
   margin: 20px 5px;
   padding: 20px;
-  font-size: 25px;
+  font-size: 2em;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   text-decoration: none;
   color: #ffffff;
-  background-color: #25001f;
+  background-color: #212736;
   border-radius: 5px;
   font-family: type;
   text-align: center;
 }
 
 .sobre div .botoes #sobreBtn {
-  background-color: #CF5FB3;
-  color: #ffffff;
-  text-shadow: black 3px 3px 5px;
+  background-color: #f8a830;
+  color: #fff;
+  text-shadow: #212736 1px 2px 3px;
 }
 
 .sobre div .botoes #projetosBtn {
-  -webkit-box-shadow: rgba(247, 246, 246, 0.185) 1px 1px 5px 0.1px;
-          box-shadow: rgba(247, 246, 246, 0.185) 1px 1px 5px 0.1px;
-  color: #CF5FB3;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.466) 1px 1px 5px 0.1px;
+          box-shadow: rgba(0, 0, 0, 0.466) 1px 1px 5px 0.1px;
+  text-shadow: #212736 1px 2px 3px;
+  color: #f8a830;
 }
 
 .sobre div a {
@@ -991,14 +1037,13 @@ header {
 }
 
 body {
-  background-image: linear-gradient(65deg, #4f0e4b, #3a0735, #25001f, #000 70%);
-  background-color: black !important;
+  background-color: #191d28 !important;
   font-family: roboto;
 }
 
 body h1 {
   font-family: roboto;
-  color: #ffffff;
+  color: #212736;
   font-size: 2em;
 }
 

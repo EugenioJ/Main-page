@@ -42,29 +42,32 @@ $color-secondary-border:#ffffff;
     flex-direction: column;
     color: #ffffff;
     height: 100vh;
-    width: 100vw;
+    
     text-align: center;
     flex-wrap: wrap;
     #barra-superior-sobre{
-        margin:0;
+        background-color: $secondary-color;
+        margin-bottom: 15px;
+        display: flex;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
         h2{
-            background: $accent-color;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-size: 3em;
-            margin: 0px;
-            padding: 20px;
-            
+            color: $accent-color;
+            font-family: type;
+            text-shadow: 1px 2px 3px #121f52;
+            font-size: 4em;
 
+            margin: 0px;
+            padding: 5x;
         }
     }
 
     .home_img {
         display: flex;
-        width: 80vw;
-    
         align-items: flex-start;
         justify-content: space-evenly;
+        position: relative;
         .home_blob-img{
             width: 200px;
             
@@ -80,17 +83,20 @@ $color-secondary-border:#ffffff;
             flex-direction: row;
             align-items: center;
             justify-content: flex-start;
-            margin: 0em 1em;
+            margin: 5px 0px;
             padding-bottom: 10px;
             a{
-                margin: 5px;
+                margin: 0px 10px;
             }
             #cv{
-                font-family: roboto;
+
                 padding: 3px 1em;
-                margin: 0px;
+                margin: 0px 0px;
                 border-radius: 100px;
                 background-color: $accent-color;
+                font-size: 20px;
+                font-family: type;
+            
             }
             img{
                 width: 15px;
@@ -99,30 +105,7 @@ $color-secondary-border:#ffffff;
                 padding: 0px 5px 
             } 
         }
-        .social::after{
-            position: absolute;
-            box-sizing: border-box;
-            height: 80px;
-            right: 0%;
-            margin: 0px;
-            bottom: 0%;
-            width: 2px;
-            background-color: #bdbcbc;
-            content: "";
-            box-shadow: #ffffff 1px 1px 5px 1px;
-        }
-        .social::before{
-            position: absolute;
-            box-sizing: border-box;
-            height: 2px;
-            right: 0%;
-            margin: 0px;
-            bottom: 0%;
-            width: 80px;
-            background-color: #bdbcbc;
-            content: "";
-            box-shadow: #ffffff 1px 1px 5px 1px;
-        }
+        
         
     }
 
@@ -151,64 +134,47 @@ $color-secondary-border:#ffffff;
             height: 100px;
         }
     }
-    .nome div::before{
-        position: absolute;
-        box-sizing: border-box;
-        height: 2px;
-        left: 0%;
-        margin: 0px;
-        top: 0%;
-        width: 80px;
-        background-color: #bdbcbc;
-        content: "";
-        box-shadow: #ffffff 1px 1px 5px 1px;
-    }
-    .nome div::after{
-        position: absolute;
-        box-sizing: border-box;
-        height: 80px;
-        left: 0%;
-        margin: 0px;
-        top: 0%;
-        width: 2px;
-        background-color: #bdbcbc;
-        content: "";
-        box-shadow: #ffffff 1px 1px 5px 1px;
-        }
+    
+
     .nome{  
         min-width: 400px;
+        max-width: 800px;
         color: #aca8ac;
-        
-        margin: 5px;
         display: flex;
         flex-direction: column;
         text-align: center;
         font-family: type;
-
+        span{
+            color: $accent-color;
+        }
         p{
             width: 440px;
             font-size: 20px;
+            text-align: justify;
         }
         div{
             position: relative;
-            width: 100%;
-            margin-bottom: 20px;
+            width: 440px;
+            margin: 10px 0px;
+            text-align: left;
 
         }
         h2{
-            font-size: 45px;
+            font-size: 30px;
+            text-align: left;
             position: relative;
+            color: $accent-color;
+            margin: 0px;
         }
         h2::before{
             position: absolute;
             box-sizing: border-box;
             height: 2px;
             bottom: 0%;
-            right: 25%;
-            left: 25%;
-            width: 220px;
-            background-color: #bdbcbc;
-            content: "";
+            
+            width: 100px;
+            background-color: $accent-color;
+            
         }
 
     div{

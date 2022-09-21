@@ -52,36 +52,46 @@
           flex-direction: column;
   color: #ffffff;
   height: 100vh;
-  width: 100vw;
   text-align: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 .quem #barra-superior-sobre {
-  margin: 0;
+  background-color: #212736;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .quem #barra-superior-sobre h2 {
-  background: #f8a830;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 3em;
+  color: #f8a830;
+  font-family: type;
+  text-shadow: 1px 2px 3px #121f52;
+  font-size: 4em;
   margin: 0px;
-  padding: 20px;
+  padding: 5x;
 }
 
 .quem .home_img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 80vw;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  position: relative;
 }
 
 .quem .home_img .home_blob-img {
@@ -107,20 +117,21 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin: 0em 1em;
+  margin: 5px 0px;
   padding-bottom: 10px;
 }
 
 .quem .home_img .social a {
-  margin: 5px;
+  margin: 0px 10px;
 }
 
 .quem .home_img .social #cv {
-  font-family: roboto;
   padding: 3px 1em;
-  margin: 0px;
+  margin: 0px 0px;
   border-radius: 100px;
   background-color: #f8a830;
+  font-size: 20px;
+  font-family: type;
 }
 
 .quem .home_img .social img {
@@ -129,36 +140,6 @@
 
 .quem .home_img .social div {
   padding: 0px 5px;
-}
-
-.quem .home_img .social::after {
-  position: absolute;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  height: 80px;
-  right: 0%;
-  margin: 0px;
-  bottom: 0%;
-  width: 2px;
-  background-color: #bdbcbc;
-  content: "";
-  -webkit-box-shadow: #ffffff 1px 1px 5px 1px;
-          box-shadow: #ffffff 1px 1px 5px 1px;
-}
-
-.quem .home_img .social::before {
-  position: absolute;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  height: 2px;
-  right: 0%;
-  margin: 0px;
-  bottom: 0%;
-  width: 80px;
-  background-color: #bdbcbc;
-  content: "";
-  -webkit-box-shadow: #ffffff 1px 1px 5px 1px;
-          box-shadow: #ffffff 1px 1px 5px 1px;
 }
 
 .quem .info {
@@ -209,40 +190,10 @@
   height: 100px;
 }
 
-.quem .nome div::before {
-  position: absolute;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  height: 2px;
-  left: 0%;
-  margin: 0px;
-  top: 0%;
-  width: 80px;
-  background-color: #bdbcbc;
-  content: "";
-  -webkit-box-shadow: #ffffff 1px 1px 5px 1px;
-          box-shadow: #ffffff 1px 1px 5px 1px;
-}
-
-.quem .nome div::after {
-  position: absolute;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  height: 80px;
-  left: 0%;
-  margin: 0px;
-  top: 0%;
-  width: 2px;
-  background-color: #bdbcbc;
-  content: "";
-  -webkit-box-shadow: #ffffff 1px 1px 5px 1px;
-          box-shadow: #ffffff 1px 1px 5px 1px;
-}
-
 .quem .nome {
   min-width: 400px;
+  max-width: 800px;
   color: #aca8ac;
-  margin: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -254,20 +205,29 @@
   font-family: type;
 }
 
+.quem .nome span {
+  color: #f8a830;
+}
+
 .quem .nome p {
   width: 440px;
   font-size: 20px;
+  text-align: justify;
 }
 
 .quem .nome div {
   position: relative;
-  width: 100%;
-  margin-bottom: 20px;
+  width: 440px;
+  margin: 10px 0px;
+  text-align: left;
 }
 
 .quem .nome h2 {
-  font-size: 45px;
+  font-size: 30px;
+  text-align: left;
   position: relative;
+  color: #f8a830;
+  margin: 0px;
 }
 
 .quem .nome h2::before {
@@ -276,11 +236,8 @@
           box-sizing: border-box;
   height: 2px;
   bottom: 0%;
-  right: 25%;
-  left: 25%;
-  width: 220px;
-  background-color: #bdbcbc;
-  content: "";
+  width: 100px;
+  background-color: #f8a830;
 }
 
 .quem .nome div {

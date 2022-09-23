@@ -117,21 +117,39 @@ $color-secondary-border:#ffffff;
         display: flex;
         flex-direction: column;
         flex:1;
+        color:$secondary-color;
+        h2{
+            color: $accent-color;
+            text-shadow: 1px 1px 5px rgb(87, 37, 37);
+        }
         div{
             display: flex;
             justify-content: center;
+            div{
+                margin: 10px;
+                border:5px $secondary-color solid;
+                border-radius: 100%;
+                box-shadow: 1px 1px 5px $accent-color;
+            }
         }
         svg{
+            width: 98px;
+            height: 98px;
             padding: 15px;
+    
         }
         .css{
-           height: 100px;
+            width: 98px;
+            height: 98px;
         }
         .html{
-            height: 100px;
+            width: 98px;
+            height: 98px;
         }
         .js{
+            
             height: 100px;
+            width: 100px;
         }
     }
     

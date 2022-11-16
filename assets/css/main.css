@@ -51,7 +51,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   color: #ffffff;
-  height: 100vh;
+  min-height: 100vh;
   text-align: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -76,7 +76,7 @@
   color: #f8a830;
   font-family: type;
   text-shadow: 1px 2px 3px #121f52;
-  font-size: 4em;
+  font-size: 3em;
   margin: 0px;
   padding: 5x;
 }
@@ -94,12 +94,13 @@
   position: relative;
 }
 
-.quem .home_img .home_blob-img {
-  width: 200px;
+.quem .home_img #sobre {
+  padding: 0px 15px;
+  border-radius: 0px  5px;
 }
 
-.quem .home_img .home_blob {
-  width: 320px;
+.quem .home_img #perfil {
+  border-radius: 100%;
 }
 
 .quem .home_img .social {
@@ -150,6 +151,56 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.quem .tecnologias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 250px;
+  height: 300px;
+  border-radius: 5px;
+  margin-right: 10px;
+  border: 1px #212736 solid;
+}
+
+.quem .outros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 250px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border: 1px #212736 solid;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 300px;
 }
 
 .quem .habilidades {
@@ -160,15 +211,58 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  min-width: 100vw;
+  min-height: -webkit-max-content;
+  min-height: -moz-max-content;
+  min-height: max-content;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-height: 100px;
   color: #212736;
 }
 
+.quem .habilidades .idiomas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 250px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border: 1px #212736 solid;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 10px;
+  height: 300px;
+}
+
+.quem .habilidades h3 {
+  font-size: 20px;
+  color: #aca8ac;
+  font-family: type;
+}
+
 .quem .habilidades h2 {
+  position: relative;
   color: #f8a830;
-  text-shadow: 1px 1px 5px #572525;
+  font-family: type;
+  font-size: 2em;
+  text-shadow: 1px 2px 3px #424242;
 }
 
 .quem .habilidades div {
@@ -178,14 +272,15 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.quem .habilidades div div {
-  margin: 10px;
-  border: 5px #212736 solid;
-  border-radius: 100%;
-  -webkit-box-shadow: 1px 1px 5px #f8a830;
-          box-shadow: 1px 1px 5px #f8a830;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .quem .habilidades svg {
@@ -194,19 +289,12 @@
   padding: 15px;
 }
 
-.quem .habilidades .css {
-  width: 98px;
-  height: 98px;
-}
-
-.quem .habilidades .html {
-  width: 98px;
-  height: 98px;
-}
-
-.quem .habilidades .js {
-  height: 100px;
-  width: 100px;
+.quem .habilidades .css, .quem .habilidades .html, .quem .habilidades .js, .quem .habilidades .ingles {
+  max-width: 98px;
+  max-height: 98px;
+  border: 5px #212736 solid;
+  border-radius: 100%;
+  margin: 10px;
 }
 
 .quem .nome {
@@ -760,14 +848,15 @@ aside a {
   z-index: 2;
   width: 450px;
   display: none;
-  -webkit-filter: drop-shadow(#FFD700 1px 1px 3px);
-          filter: drop-shadow(#FFD700 1px 1px 3px);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 .sobre .blur {
   -webkit-filter: blur(20px);
           filter: blur(20px);
-  display: none;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
   position: absolute;
   z-index: 1;
   width: 450px;

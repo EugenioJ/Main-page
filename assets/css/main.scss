@@ -41,7 +41,7 @@ $color-secondary-border:#ffffff;
     
     flex-direction: column;
     color: #ffffff;
-    height: 100vh;
+    min-height: 100vh;
     
     text-align: center;
     flex-wrap: wrap;
@@ -56,7 +56,7 @@ $color-secondary-border:#ffffff;
             color: $accent-color;
             font-family: type;
             text-shadow: 1px 2px 3px #121f52;
-            font-size: 4em;
+            font-size: 3em;
 
             margin: 0px;
             padding: 5x;
@@ -68,14 +68,15 @@ $color-secondary-border:#ffffff;
         align-items: flex-start;
         justify-content: space-evenly;
         position: relative;
-        .home_blob-img{
-            width: 200px;
-            
-            
-        }   
-        .home_blob {
-            width: 320px;
+        #sobre{
         
+            padding: 0px 15px;
+            border-radius: 0px  5px;
+        }
+    
+        #perfil{
+            border-radius: 100%;
+            
         }
         .social{
             display: flex;
@@ -112,45 +113,93 @@ $color-secondary-border:#ffffff;
     .info{
         display: flex;
         flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .tecnologias{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+        width: 250px;
+        height: 300px;
+        border-radius: 5px;
+        margin-right:10px;
+        border: 1px $secondary-color solid
+        
+    }
+    .outros{
+        display: flex;
+            flex-direction: column;
+            width: 250px;
+            align-items: center;
+            border-radius: 5px;
+            justify-content: flex-start;
+            border: 1px $secondary-color solid;
+            flex: 1;
+            
+            height: 300px;
     }
     .habilidades{
         display: flex;
         flex-direction: column;
-        flex:1;
+        align-items: center;
+        justify-content: flex-start;
+        min-width: 100vw;
+        min-height: max-content;
+        flex-wrap: wrap;
+        min-height: 100px;
+        
         color:$secondary-color;
+        
+        .idiomas{
+            display: flex;
+            flex-direction: column;
+            width: 250px;
+            align-items: center;
+            border-radius: 5px;
+            justify-content: flex-start;
+            border: 1px $secondary-color solid;
+            flex: 1;
+            margin-right: 10px;
+            height: 300px;
+        }
+        h3{
+            font-size: 20px;
+            color: #aca8ac;
+            font-family: type;
+        }
         h2{
+            position: relative;
             color: $accent-color;
-            text-shadow: 1px 1px 5px rgb(87, 37, 37);
+            font-family: type;
+            font-size: 2em;
+            text-shadow: 1px 2px 3px rgb(66, 66, 66);
         }
         div{
             display: flex;
             justify-content: center;
-            div{
-                margin: 10px;
-                border:5px $secondary-color solid;
-                border-radius: 100%;
-                box-shadow: 1px 1px 5px $accent-color;
-            }
+            flex-direction: row;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            
         }
         svg{
             width: 98px;
             height: 98px;
             padding: 15px;
+            
     
         }
-        .css{
-            width: 98px;
-            height: 98px;
-        }
-        .html{
-            width: 98px;
-            height: 98px;
-        }
-        .js{
+        .css, .html, .js, .ingles{
+            max-width: 98px;
+            max-height: 98px;
+            border:5px $secondary-color solid;
+            border-radius: 100%;
+            margin: 10px;
             
-            height: 100px;
-            width: 100px;
         }
+
     }
     
 
@@ -575,15 +624,16 @@ aside{
     flex-direction: row;
     .logo{
         position: absolute;
+        
         z-index: 2;
         width: 450px;    
         display: none;
-        filter:drop-shadow(#FFD700 1px 1px 3px)
+        filter: grayscale(100%);
         
     }
     .blur{
         filter: blur(20px);
-        display: none;
+        filter: grayscale(100%);
         position: absolute;
         z-index: 1;
         width: 450px;   

@@ -30,15 +30,15 @@
   position: absolute;
   z-index: 11;
   background-color: rgba(255, 255, 0, 0);
-  width: 45px;
-  border: 1px #ffffff solid;
-  border-radius: 100%;
-  padding: 5px;
-  height: 45px;
-  left: 0px;
-  top: 10%;
+  width: 35px;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
+  border-radius: 100%;
+  padding: 5px;
+  height: 35px;
+  border: none;
+  left: 0px;
+  top: 10%;
 }
 
 .quem {
@@ -73,10 +73,10 @@
 }
 
 .quem #barra-superior-sobre h2 {
-  color: #f8a830;
+  color: #ffcc74;
   font-family: type;
   text-shadow: 1px 2px 3px #121f52;
-  font-size: 3em;
+  font-size: 2em;
   margin: 0px;
   padding: 5x;
 }
@@ -127,10 +127,11 @@
 }
 
 .quem .home_img .social #cv {
+  color: #20222b;
   padding: 3px 1em;
   margin: 0px 0px;
   border-radius: 100px;
-  background-color: #f8a830;
+  background-color: #ffcc74;
   font-size: 20px;
   font-family: type;
 }
@@ -163,10 +164,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -225,6 +226,29 @@
       flex-wrap: wrap;
   min-height: 100px;
   color: #212736;
+  color: #fff;
+}
+
+.quem .habilidades p {
+  margin-bottom: 5px;
+}
+
+.quem .habilidades .titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.quem .habilidades .titulo img {
+  width: 20px;
+  padding-top: 2px;
 }
 
 .quem .habilidades .idiomas {
@@ -253,13 +277,13 @@
 
 .quem .habilidades h3 {
   font-size: 20px;
-  color: #aca8ac;
+  color: #fff;
   font-family: type;
 }
 
 .quem .habilidades h2 {
   position: relative;
-  color: #f8a830;
+  color: #ffcc74;
   font-family: type;
   font-size: 2em;
   text-shadow: 1px 2px 3px #424242;
@@ -300,7 +324,7 @@
 .quem .nome {
   min-width: 400px;
   max-width: 800px;
-  color: #aca8ac;
+  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -310,10 +334,11 @@
           flex-direction: column;
   text-align: center;
   font-family: type;
+  margin-bottom: 5px;
 }
 
 .quem .nome span {
-  color: #f8a830;
+  color: #ffcc74;
 }
 
 .quem .nome p {
@@ -333,7 +358,7 @@
   font-size: 30px;
   text-align: left;
   position: relative;
-  color: #f8a830;
+  color: #ffcc74;
   margin: 0px;
 }
 
@@ -344,159 +369,13 @@
   height: 2px;
   bottom: 0%;
   width: 100px;
-  background-color: #f8a830;
+  background-color: #ffcc74;
 }
 
 .quem .nome div {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-}
-
-#mediC {
-  --azul-fundo: #5693b1;
-  padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  border-radius: 5px;
-  background-color: var(--azul-fundo);
-  -webkit-box-shadow: 3px 3px 5px 3px rgba(214, 212, 212, 0.151);
-          box-shadow: 3px 3px 5px 3px rgba(214, 212, 212, 0.151);
-}
-
-#mediC svg {
-  width: 100px;
-  height: 100px;
-}
-
-#mediC h2 {
-  font-size: 75px;
-  text-shadow: 1px 1px 2px black;
-  color: #ffffff;
-}
-
-#mediC div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#mediC .text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-#mediC .text p {
-  color: #ffffff;
-  font-size: 25px;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-#mediC .img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-#mediC .img img {
-  max-width: 300px;
-}
-
-#jesusf {
-  --preto-fundo: #1D1919;
-  padding: 20px;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-radius: 5px;
-  min-height: 70vh;
-  max-width: 20vw;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: var(--preto-fundo);
-  -webkit-box-shadow: 3px 3px 5px 3px rgba(65, 64, 64, 0.151);
-          box-shadow: 3px 3px 5px 3px rgba(65, 64, 64, 0.151);
-}
-
-#jesusf a {
-  text-decoration: none;
-  color: black;
-}
-
-#jesusf svg {
-  width: auto;
-  height: auto;
-}
-
-#jesusf h2 {
-  font-size: 75px;
-  text-shadow: black 5px 5px 10px;
-  color: #C21370;
-}
-
-#jesusf div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#jesusf p {
-  text-shadow: 1px 1px 5px black;
-  color: #FFB69F;
-}
-
-#jesusf .text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-#jesusf .text p {
-  font-size: 25px;
-}
-
-#jesusf .img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-#jesusf .img img {
-  max-width: 300px;
 }
 
 .things > .content {
@@ -566,104 +445,37 @@
   -ms-transform: rotate(12deg);
 }
 
-#Windt {
-  --cinza-fundo: rgb(26, 26, 26);
-  padding: 20px;
-  min-height: 70vh;
-  max-width: 20vw;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-radius: 5px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: var(--cinza-fundo);
-  -webkit-box-shadow: 3px 3px 5px 3px rgba(65, 64, 64, 0.151);
-          box-shadow: 3px 3px 5px 3px rgba(65, 64, 64, 0.151);
-}
-
-#Windt a {
-  text-decoration: none;
-  color: black;
-}
-
-#Windt svg {
-  width: 100px;
-  height: 100px;
-}
-
-#Windt h2 {
-  font-size: 75px;
-  text-shadow: black 5px 5px 10px;
-  text-align: center;
-  color: #fc6404;
-}
-
-#Windt div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#Windt .text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-#Windt .text p {
-  font-size: 25px;
-  text-align: center;
-  color: #ffffff;
-}
-
-#Windt .img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-#Windt .img img {
-  max-width: 300px;
-}
-
 #projetos {
-  width: auto;
-  height: auto;
   display: none;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: type;
+  height: 100vh;
+}
+
+#projetos .titulo {
+  width: 100vw;
 }
 
 #projetos .titulo h2 {
-  font-size: 65px;
-  color: #ffffff;
+  font-size: 32px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffcc74;
+  background-color: #212736;
 }
 
-#projetos .titulo h3 {
-  color: #ffffff;
+#projetos .project-cards {
+  width: 90vw;
+  height: 90vh;
 }
 
-#projetos .items section {
+#projetos .project-cards h2 {
+  color: white;
+}
+
+#projetos .project-cards section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -671,33 +483,13 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 650px;
-  min-width: 20vw;
+  max-height: 250px;
   max-width: 350px;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
 }
 
-#projetos .items section a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-decoration: none;
-  color: black;
-  min-height: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-#projetos .items ul {
+#projetos .project-cards ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -705,16 +497,78 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   padding: 20px;
+  height: 100%;
 }
 
-#projetos .items ul li {
+#projetos .project-cards ul li {
+  width: 500px;
+  height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
+  margin: 10px 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#projetos .project-cards ul li .cover {
+  background-color: rgba(0, 0, 0, 0.705);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 500px;
+  height: 300px;
+}
+
+#projetos .project-cards ul li .cover:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  background-color: rgba(245, 245, 245, 0);
+}
+
+#projetos .project-cards ul li .cover:hover h2 {
+  color: rgba(255, 255, 255, 0);
+}
+
+#projetos .project-cards ul .medicenter, #projetos .project-cards ul .wind, #projetos .project-cards ul .jesus {
+  background-position: center center;
+  background-size: 500px 300px;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#projetos .project-cards ul .medicenter {
+  background-image: url(../images/medicenter.png);
+}
+
+#projetos .project-cards ul .wind {
+  background-image: url(../images/wind.png);
+}
+
+#projetos .project-cards ul .jesus {
+  background-image: url(../images/jesusfreak.png);
 }
 
 #projetos .info-bar {
@@ -742,66 +596,6 @@
   color: #ffffff;
 }
 
-body > section.container.sobre > aside > div > a:nth-child(1)::before {
-  position: absolute;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  height: 60px;
-  left: 0%;
-  margin: -5px;
-  top: 0%;
-  width: 2px;
-  background-color: #bdbcbc;
-  content: "";
-  -webkit-box-shadow: #ffffff 1px 1px 5px 1px;
-          box-shadow: #ffffff 1px 1px 5px 1px;
-}
-
-body > section.container.sobre > aside > div > a:nth-child(1)::after {
-  position: absolute;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 60px;
-  left: 0%;
-  margin: -5px;
-  top: 0%;
-  height: 2px;
-  background-color: #bdbcbc;
-  content: "";
-  -webkit-box-shadow: #ffffff 1px 1px 5px 1px;
-          box-shadow: #ffffff 1px 1px 5px 1px;
-}
-
-body > section.container.sobre > aside > div > a:nth-child(3)::before {
-  position: absolute;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  height: 60px;
-  margin: -5px;
-  right: 0%;
-  bottom: 0%;
-  width: 2px;
-  background-color: #bdbcbc;
-  content: "";
-  -webkit-box-shadow: #ffffff 1px 1px 5px 1px;
-          box-shadow: #ffffff 1px 1px 5px 1px;
-}
-
-body > section.container.sobre > aside > div > a:nth-child(3)::after {
-  position: absolute;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  height: 2px;
-  margin: -5px;
-  right: 0%;
-  bottom: 0%;
-  width: 60px;
-  background-color: #bdbcbc;
-  content: "";
-  -webkit-box-shadow: #ffffff 1px 1px 5px 1px;
-          box-shadow: #ffffff 1px 1px 5px 1px;
-}
-
 aside {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -815,13 +609,12 @@ aside {
 
 aside img {
   position: relative;
-  margin: 10px;
-  width: 35px;
+  width: 25px;
 }
 
 aside a {
   border: none !important;
-  padding: 5px !important;
+  padding: 0px !important;
   position: relative;
 }
 
@@ -862,36 +655,6 @@ aside a {
   width: 450px;
 }
 
-.sobre .perfil h2::after {
-  position: absolute;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  height: 120px;
-  left: 0%;
-  margin: 5px;
-  top: 0%;
-  width: 2px;
-  background-color: #bdbcbc;
-  content: "";
-  -webkit-box-shadow: #ffffff 1px 1px 5px 1px;
-          box-shadow: #ffffff 1px 1px 5px 1px;
-}
-
-.sobre .perfil h2::before {
-  position: absolute;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  height: 2px;
-  left: 0%;
-  margin: 5px;
-  top: 0%;
-  width: 120px;
-  background-color: #bdbcbc;
-  content: "";
-  -webkit-box-shadow: #ffffff 1px 1px 5px 1px;
-          box-shadow: #ffffff 1px 1px 5px 1px;
-}
-
 .sobre .perfil {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -909,36 +672,6 @@ aside a {
       -ms-flex: 2;
           flex: 2;
   width: 100%;
-}
-
-.sobre .chamada::after {
-  position: absolute;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  height: 120px;
-  left: 100%;
-  margin: 15px 0px;
-  bottom: 0%;
-  width: 2px;
-  background-color: #bdbcbc;
-  content: "";
-  -webkit-box-shadow: #ffffff 1px 1px 5px 1px;
-          box-shadow: #ffffff 1px 1px 5px 1px;
-}
-
-.sobre .chamada::before {
-  position: absolute;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  height: 2px;
-  right: 0%;
-  margin: 15px 0px;
-  bottom: 0%;
-  width: 120px;
-  background-color: #bdbcbc;
-  content: "";
-  -webkit-box-shadow: #ffffff 1px 1px 5px 1px;
-          box-shadow: #ffffff 1px 1px 5px 1px;
 }
 
 .sobre div {
@@ -988,22 +721,23 @@ aside a {
   font-size: 20px;
   background: -webkit-linear-gradient(#e9e9e9, #2c2c2c);
   -webkit-background-clip: text;
+  margin-top: 0px;
   -webkit-text-fill-color: transparent;
 }
 
 .sobre div h2 {
   font-size: 3em;
-  color: #aca8ac;
+  color: #fff;
   text-align: center;
   justify-self: flex-end;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  padding: 20px 10px;
 }
 
 .sobre div label {
-  background: #f8a830;
+  background: #ffcc74;
   -webkit-background-clip: text;
+  text-align: center;
   -webkit-text-fill-color: transparent;
 }
 
@@ -1021,7 +755,7 @@ aside a {
 
 .sobre div .botoes button {
   margin: 20px 5px;
-  padding: 20px;
+  padding: 5px;
   font-size: 2em;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -1035,7 +769,7 @@ aside a {
 }
 
 .sobre div .botoes #sobreBtn {
-  background-color: #f8a830;
+  background-color: #ffcc74;
   color: #fff;
   text-shadow: #212736 1px 2px 3px;
 }
@@ -1044,7 +778,7 @@ aside a {
   -webkit-box-shadow: rgba(0, 0, 0, 0.466) 1px 1px 5px 0.1px;
           box-shadow: rgba(0, 0, 0, 0.466) 1px 1px 5px 0.1px;
   text-shadow: #212736 1px 2px 3px;
-  color: #f8a830;
+  color: #ffcc74;
 }
 
 .sobre div a {
@@ -1061,17 +795,8 @@ aside a {
 }
 
 .sobre div p {
-  margin: 20px;
   font-size: 45px;
   color: #aca8ac;
-}
-
-* {
-  margin: 0;
-  border: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0;
 }
 
 .container {

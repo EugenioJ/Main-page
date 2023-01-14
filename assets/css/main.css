@@ -5,6 +5,23 @@
           box-sizing: border-box;
 }
 
+@media (width: 800px) {
+  * {
+    background-color: #26D463;
+  }
+}
+
+.show_barra_titulo {
+  -webkit-animation: show_barra 1s linear;
+          animation: show_barra 1s linear;
+  overflow: hidden;
+}
+
+.show {
+  -webkit-animation: go-back 0.5s linear;
+          animation: go-back 0.5s linear;
+}
+
 #high {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -63,7 +80,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100vw;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -78,7 +94,7 @@
   text-shadow: 1px 2px 3px #121f52;
   font-size: 2em;
   margin: 0px;
-  padding: 5x;
+  padding: 5px;
 }
 
 .quem .home_img {
@@ -92,6 +108,21 @@
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   position: relative;
+}
+
+@media (min-width: 236px) and (max-width: 768px) {
+  .quem .home_img {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .quem .home_img #sobre {
@@ -122,6 +153,14 @@
   padding-bottom: 10px;
 }
 
+@media (min-width: 236px) and (max-width: 768px) {
+  .quem .home_img .social {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .quem .home_img .social a {
   margin: 0px 10px;
 }
@@ -134,6 +173,7 @@
   background-color: #ffcc74;
   font-size: 20px;
   font-family: type;
+  text-decoration: none;
 }
 
 .quem .home_img .social img {
@@ -218,13 +258,13 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  min-width: 100vw;
-  min-height: -webkit-max-content;
-  min-height: -moz-max-content;
-  min-height: max-content;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  min-height: 100px;
+  width: 98vw;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 100px;
   color: #212736;
   color: #fff;
 }
@@ -321,6 +361,13 @@
   margin: 10px;
 }
 
+@media (min-width: 236px) and (max-width: 768px) {
+  .quem .habilidades .css, .quem .habilidades .html, .quem .habilidades .js, .quem .habilidades .ingles {
+    max-width: 50px;
+    max-height: 50px;
+  }
+}
+
 .quem .nome {
   min-width: 400px;
   max-width: 800px;
@@ -347,6 +394,12 @@
   text-align: justify;
 }
 
+@media (min-width: 236px) and (max-width: 768px) {
+  .quem .nome p {
+    text-align: center;
+  }
+}
+
 .quem .nome div {
   position: relative;
   width: 440px;
@@ -360,6 +413,12 @@
   position: relative;
   color: #ffcc74;
   margin: 0px;
+}
+
+@media (min-width: 236px) and (max-width: 768px) {
+  .quem .nome h2 {
+    text-align: center;
+  }
 }
 
 .quem .nome h2::before {
@@ -499,16 +558,29 @@
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 20px;
   height: 100%;
 }
 
+#projetos .project-cards ul a {
+  text-decoration: none;
+}
+
+#projetos .project-cards ul li:hover {
+  scale: 1.1;
+  -webkit-transition: linear 0.5s;
+  transition: linear 0.5s;
+}
+
 #projetos .project-cards ul li {
-  width: 500px;
-  height: 300px;
+  max-width: 430px;
+  max-height: 270px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -529,8 +601,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 500px;
-  height: 300px;
+  width: 430px;
+  height: 270px;
 }
 
 #projetos .project-cards ul li .cover:hover {
@@ -541,16 +613,21 @@
 }
 
 #projetos .project-cards ul li .cover:hover h2 {
-  color: rgba(255, 255, 255, 0);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 #projetos .project-cards ul .medicenter, #projetos .project-cards ul .wind, #projetos .project-cards ul .jesus {
   background-position: center center;
-  background-size: 500px 300px;
+  background-size: 430px 270px;
   background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -561,6 +638,16 @@
 
 #projetos .project-cards ul .medicenter {
   background-image: url(../images/medicenter.png);
+}
+
+#projetos .project-cards ul .medicenter .call {
+  display: none;
+  height: 100%;
+}
+
+#projetos .project-cards ul .medicenter .call div, #projetos .project-cards ul .medicenter .call button {
+  height: 100%;
+  border: none;
 }
 
 #projetos .project-cards ul .wind {
@@ -636,6 +723,23 @@ aside a {
           flex-direction: row;
 }
 
+@media (min-width: 236px) and (max-width: 768px) {
+  .sobre {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 236px) and (max-width: 768px) {
+  .sobre .img-perfil {
+    -webkit-box-flex: 0;
+        -ms-flex: 0;
+            flex: 0;
+  }
+}
+
 .sobre .logo {
   position: absolute;
   z-index: 2;
@@ -697,6 +801,15 @@ aside a {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+}
+
+@media (min-width: 236px) and (max-width: 768px) {
+  .sobre div {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .sobre div .chamada {
@@ -772,6 +885,8 @@ aside a {
   background-color: #ffcc74;
   color: #fff;
   text-shadow: #212736 1px 2px 3px;
+  -webkit-transition: linear 1s;
+  transition: linear 1s;
 }
 
 .sobre div .botoes #projetosBtn {
@@ -800,7 +915,6 @@ aside a {
 }
 
 .container {
-  max-width: 80vw !important;
   margin: 0 auto;
 }
 

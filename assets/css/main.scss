@@ -4,11 +4,24 @@ $accent-color:#ffcc74;
 
 $color-primary-border: rgb(189, 188, 188);
 $color-secondary-border:#ffffff;
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    @media (width:800px){
+        background-color: #26D463;
+    }
 }
+.show_barra_titulo{
+    animation: show_barra 1s linear;
+    overflow: hidden;
+}
+.show{
+    animation: go-back 0.5s linear;
+        
+    }    
+    
 #high{
     display: flex;
     flex-direction: row;
@@ -37,18 +50,15 @@ $color-secondary-border:#ffffff;
     position: relative;
     display: none;
     align-content: space-around;
-    
     flex-direction: column;
     color: #ffffff;
     min-height: 100vh;
-    
     text-align: center;
     flex-wrap: wrap;
     #barra-superior-sobre{
         background-color: $secondary-color;
         margin-bottom: 15px;
         display: flex;
-        width: 100vw;
         align-items: center;
         justify-content: center;
         h2{
@@ -56,9 +66,9 @@ $color-secondary-border:#ffffff;
             font-family: type;
             text-shadow: 1px 2px 3px #121f52;
             font-size: 2em;
-
             margin: 0px;
-            padding: 5x;
+            padding: 5px;
+            
         }
     }
 
@@ -67,8 +77,14 @@ $color-secondary-border:#ffffff;
         align-items: flex-start;
         justify-content: space-evenly;
         position: relative;
+        @media (min-width: 236px) and (max-width: 768px){
+            flex-direction: column;;
+            align-items: center;
+            justify-content: center;
+
+        }
         #sobre{
-        
+            
             padding: 0px 15px;
             border-radius: 0px  5px;
         }
@@ -85,6 +101,9 @@ $color-secondary-border:#ffffff;
             justify-content: flex-start;
             margin: 5px 0px;
             padding-bottom: 10px;
+            @media (min-width: 236px) and (max-width: 768px){
+               justify-content: center;;
+            }
             a{
                 margin: 0px 10px;
             }
@@ -96,6 +115,7 @@ $color-secondary-border:#ffffff;
                 background-color: $accent-color;
                 font-size: 20px;
                 font-family: type;
+                text-decoration: none;
             
             }
             img{
@@ -146,10 +166,10 @@ $color-secondary-border:#ffffff;
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        min-width: 100vw;
-        min-height: max-content;
-        flex-wrap: wrap;
-        min-height: 100px;
+        width: 98vw;
+        height: max-content;
+        flex-wrap: nowrap;
+        height: 100px;
         color:$secondary-color;
         color: #fff;
         p{
@@ -209,7 +229,10 @@ $color-secondary-border:#ffffff;
             border:5px $secondary-color solid;
             border-radius: 100%;
             margin: 10px;
-            
+            @media (min-width: 236px) and (max-width: 768px){
+                max-width: 50px;
+                max-height: 50px;
+            }
         }
 
     }
@@ -224,6 +247,7 @@ $color-secondary-border:#ffffff;
         text-align: center;
         font-family: type;
         margin-bottom: 5px;
+        
         span{
             color: $accent-color;
         }
@@ -231,6 +255,9 @@ $color-secondary-border:#ffffff;
             width: 440px;
             font-size: 20px;
             text-align: justify;
+            @media (min-width: 236px) and (max-width: 768px){
+                text-align: center;;;
+            }
         }
         div{
             position: relative;
@@ -245,6 +272,9 @@ $color-secondary-border:#ffffff;
             position: relative;
             color: $accent-color;
             margin: 0px;
+            @media (min-width: 236px) and (max-width: 768px){
+                text-align: center;
+            }
         }
         h2::before{
             position: absolute;
@@ -342,6 +372,7 @@ $color-secondary-border:#ffffff;
     align-items: center;
     font-family: type;
     height: 100vh;
+    
     .titulo{
         width: 100vw;
         h2{
@@ -369,31 +400,44 @@ $color-secondary-border:#ffffff;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: flex-start;
+            align-items: flex-start;
+            justify-content: center;
+            
             padding: 20px;
             height: 100%;
-           
+            a{
+                text-decoration: none;
+            }
+           li:hover{
+                scale: 1.1;
+                transition: linear 0.5s;
+                
+           }
             li{
-                width: 500px;
-                height: 300px;
+                max-width: 430px;
+                max-height: 270px;
                 display: flex;
                 margin: 10px 15px;
                 align-items: center;
                 
+                
+            
                 .cover{
                     background-color: rgba(0, 0, 0, 0.705);
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    width: 500px;
-                    height: 300px;
+                    width: 430px;
+                    height: 270px;
                 }
                 .cover:hover{
                     transition: 0.3s;
                     cursor: pointer;
                     background-color: rgba(245, 245, 245, 0);
+    
                     h2{
-                        color:rgba(255, 255, 255, 0)
+                        transition: 0.3s;
+                        
                     }
                 }
                 
@@ -401,14 +445,26 @@ $color-secondary-border:#ffffff;
             }
             .medicenter, .wind, .jesus{
                 background-position: center center;
-                background-size: 500px 300px;
+                background-size: 430px 270px;
                 background-repeat: no-repeat;
                 display: flex;
+                flex-direction: row;
                 align-items: center;
                 justify-content: center;
             }
             .medicenter{
                 background-image: url(../images/medicenter.png);
+                .call{
+                    display: none;
+                    height: 100%;
+                    div, button{
+                        height: 100%;
+                        border: none;
+                        
+
+                    }
+
+                }
             }
             .wind{
                 background-image: url(../images/wind.png);
@@ -462,6 +518,14 @@ aside{
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    @media (min-width: 236px) and (max-width: 768px){
+        flex-direction: column;;
+    }
+    .img-perfil{
+        @media (min-width: 236px) and (max-width: 768px){
+            flex: 0;
+        }
+    }
     .logo{
         position: absolute;
         
@@ -469,7 +533,6 @@ aside{
         width: 450px;    
         display: none;
         filter: grayscale(100%);
-        
     }
     .blur{
         filter: blur(20px);
@@ -488,6 +551,7 @@ aside{
         flex: 2;
         width: 100%;
         
+        
     }
     div{
         color: #ffffff;
@@ -499,7 +563,9 @@ aside{
         height: 100%;
         width: 100%;
         height: max-content;
-    
+        @media (min-width: 236px) and (max-width: 768px){
+           flex-direction: row;
+        }
         .chamada{
             font-family: type;
             position: relative;
@@ -532,6 +598,7 @@ aside{
             -webkit-text-fill-color: transparent;
         }
         .botoes{
+            
             margin-top: 1em;
             flex-direction: row;
             align-items: flex-start;
@@ -547,11 +614,14 @@ aside{
             border-radius: 5px;
             font-family: type;
             text-align: center;
-            }
+        
+            
+        }
             #sobreBtn{
                 background-color: $accent-color;
                 color: #fff;
                 text-shadow: $secondary-color 1px 2px 3px;
+                transition: linear 1s;
                 
             }
             
@@ -583,7 +653,7 @@ aside{
     }
 }
 .container{
-    max-width: 80vw !important;
+
     margin: 0 auto;
 }
 .flex{
@@ -602,15 +672,15 @@ header{
 }
 
 body{
-    
     background-color: $dominant-color!important;
     font-family: roboto; 
+    
     h1{
         font-family: roboto;
         color: $secondary-color;
         font-size: 2em;
-
     }
+    
 }
 #losango{
     display: none;

@@ -76,15 +76,12 @@
 }
 
 .quem #barra-superior-sobre {
-  background-color: #212736;
+  border-bottom: 1px #212736 solid;
   margin-bottom: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  width: 100vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -141,10 +138,6 @@
   }
 }
 
-.quem .home_img #perfil {
-  border-radius: 100%;
-}
-
 .quem .home_img .social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -188,6 +181,7 @@
   margin: 0px 0px;
   border-radius: 100px;
   background-color: #ffcc74;
+  max-height: 30px;
   font-family: type;
   text-decoration: none;
 }
@@ -556,7 +550,6 @@
       -ms-flex-align: center;
           align-items: center;
   font-family: type;
-  height: 100vh;
 }
 
 #projetos .titulo {
@@ -568,12 +561,7 @@
   text-align: center;
   text-decoration: none;
   color: #ffcc74;
-  background-color: #212736;
-}
-
-#projetos .project-cards {
-  width: 90vw;
-  height: 90vh;
+  border-bottom: 1px #212736 solid;
 }
 
 #projetos .project-cards h2 {
@@ -770,9 +758,14 @@ aside {
   z-index: 2;
 }
 
-aside img {
+aside svg {
   position: relative;
   width: 25px;
+}
+
+aside svg:hover path {
+  background-color: #26D463;
+  fill: #ffcc74;
 }
 
 aside a {

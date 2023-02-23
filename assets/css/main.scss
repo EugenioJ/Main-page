@@ -60,12 +60,10 @@ $color-secondary-border:#ffffff;
         }
     }
     #barra-superior-sobre{
-        background-color: $secondary-color;
+        border-bottom: 1px #212736 solid;
         margin-bottom: 15px;
-        display: flex;
         align-items: center;
-        width: 100%;
-
+        width: 100vw;
         justify-content: center;
         h2{
             color: $accent-color;
@@ -83,6 +81,7 @@ $color-secondary-border:#ffffff;
         align-items: flex-start;
         justify-content: space-evenly;
         position: relative;
+    
         @media (min-width: 236px) and (max-width: 768px){
             flex-direction: column;;
             align-items: center;
@@ -99,10 +98,8 @@ $color-secondary-border:#ffffff;
                 }
         }
     
-        #perfil{
-            border-radius: 100%;
-            
-        }
+          
+        
         .social{
             display: flex;
             position: relative;
@@ -111,6 +108,7 @@ $color-secondary-border:#ffffff;
             justify-content: flex-start;
             margin: 5px 0px;
             padding-bottom: 10px;
+
             @media (min-width: 236px) and (max-width: 768px){
                justify-content: center;
                align-items: center;
@@ -127,7 +125,7 @@ $color-secondary-border:#ffffff;
                 margin: 0px 0px;
                 border-radius: 100px;
                 background-color: $accent-color;
-            
+                max-height: 30px;
                 font-family: type;
                 text-decoration: none;
             
@@ -135,9 +133,12 @@ $color-secondary-border:#ffffff;
             img{
                 width: 15px;
             }
+            
             div{
                 padding: 0px 5px 
+                
             } 
+            
         }
         
         
@@ -198,6 +199,7 @@ $color-secondary-border:#ffffff;
             display: flex;
             flex-direction: column;
             align-items: center;
+
             img{
                 width: 20px;
                 padding-top: 2px
@@ -414,7 +416,6 @@ $color-secondary-border:#ffffff;
     display: none;
     align-items: center;
     font-family: type;
-    height: 100vh;
     
     .titulo{
         width: 100vw;
@@ -423,12 +424,11 @@ $color-secondary-border:#ffffff;
             text-align: center;
             text-decoration: none;
             color: $accent-color;
-            background-color: $secondary-color;
+            border-bottom: 1px #212736 solid;
         }
 }
     .project-cards{
-        width: 90vw;
-        height: 90vh;
+       
         h2{
             color:white;
         }
@@ -566,12 +566,16 @@ aside{
     flex-direction: column;
     border-top: 1px $secondary-color solid;
     z-index: 2;
-    img{
+    svg{
         position: relative;
-
         width: 25px;
-
     }
+    svg:hover path{
+        background-color: #26D463;
+        fill: $accent-color;
+    }
+       
+    
     a{
         border: none!important;
         padding: 0px!important;

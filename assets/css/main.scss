@@ -9,9 +9,7 @@ $color-secondary-border:#ffffff;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    @media (width:800px){
-        background-color: #26D463;
-    }
+   
 }
 .show_barra_titulo{
     animation: show_barra 1s linear;
@@ -53,13 +51,21 @@ $color-secondary-border:#ffffff;
     flex-direction: column;
     color: #ffffff;
     min-height: 100vh;
+    min-width: 100vw;
     text-align: center;
     flex-wrap: wrap;
+    @media (min-width: 236px) and (max-width: 768px){
+        .container{
+            width: none;
+        }
+    }
     #barra-superior-sobre{
         background-color: $secondary-color;
         margin-bottom: 15px;
         display: flex;
         align-items: center;
+        width: 100%;
+
         justify-content: center;
         h2{
             color: $accent-color;
@@ -81,12 +87,16 @@ $color-secondary-border:#ffffff;
             flex-direction: column;;
             align-items: center;
             justify-content: center;
+           
 
         }
         #sobre{
-            
+            width: min-content;
             padding: 0px 15px;
             border-radius: 0px  5px;
+            @media (min-width: 236px) and (max-width: 768px){
+                padding: 0px 0px;
+                }
         }
     
         #perfil{
@@ -102,7 +112,11 @@ $color-secondary-border:#ffffff;
             margin: 5px 0px;
             padding-bottom: 10px;
             @media (min-width: 236px) and (max-width: 768px){
-               justify-content: center;;
+               justify-content: center;
+               align-items: center;
+                flex-wrap: nowrap;
+                width: 100vw;
+
             }
             a{
                 margin: 0px 10px;
@@ -113,7 +127,7 @@ $color-secondary-border:#ffffff;
                 margin: 0px 0px;
                 border-radius: 100px;
                 background-color: $accent-color;
-                font-size: 20px;
+            
                 font-family: type;
                 text-decoration: none;
             
@@ -139,13 +153,15 @@ $color-secondary-border:#ffffff;
     .tecnologias{
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-content: flex-start;
+
         flex: 1;
         width: 250px;
         height: 300px;
         border-radius: 5px;
         margin-right:10px;
         border: 1px $secondary-color solid;
+        }
         
     }
     
@@ -166,12 +182,15 @@ $color-secondary-border:#ffffff;
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        width: 98vw;
+        width: vw;
         height: max-content;
         flex-wrap: nowrap;
         height: 100px;
         color:$secondary-color;
         color: #fff;
+        @media (min-width: 236px) and (max-width: 990px){
+            max-width: 98vw;
+        } 
         p{
             margin-bottom: 5px;
         }
@@ -209,11 +228,16 @@ $color-secondary-border:#ffffff;
             text-shadow: 1px 2px 3px rgb(66, 66, 66);
         }
         div{
+            
             display: flex;
             justify-content: center;
             flex-direction: row;
             align-items: flex-start;
             flex-wrap: wrap;
+            @media (min-width: 236px) and (max-width: 990px){
+                width: 98vw;
+            }          
+           
             
         }
         svg{
@@ -229,12 +253,19 @@ $color-secondary-border:#ffffff;
             border:5px $secondary-color solid;
             border-radius: 100%;
             margin: 10px;
-            @media (min-width: 236px) and (max-width: 768px){
-                max-width: 50px;
-                max-height: 50px;
+        
+            @media (min-width: 236px) and (max-width: 990px){
+                max-width: 90px;
+                max-height: 90px;
             }
         }
-
+        .tecnologias, .idiomas, .outros{
+            @media (min-width: 236px) and (max-width: 990px){
+                height: 400px;
+                width: 300px;
+                margin-bottom: 15px;
+            }
+        }
     }
     
 
@@ -247,21 +278,32 @@ $color-secondary-border:#ffffff;
         text-align: center;
         font-family: type;
         margin-bottom: 5px;
+        @media (min-width: 236px) and (max-width: 1200px){
+            flex-direction: column;;
+            align-items: center;
+            justify-content: center;
+
+            min-width: 100%;
+            max-width: 230px;           
+            padding: 15px;
+        
+        }
         
         span{
             color: $accent-color;
         }
         p{
-            width: 440px;
+           
             font-size: 20px;
             text-align: justify;
             @media (min-width: 236px) and (max-width: 768px){
-                text-align: center;;;
+    
+            
             }
         }
         div{
             position: relative;
-            width: 440px;
+           
             margin: 10px 0px;
             text-align: left;
 
@@ -274,6 +316,7 @@ $color-secondary-border:#ffffff;
             margin: 0px;
             @media (min-width: 236px) and (max-width: 768px){
                 text-align: center;
+                max-width: 100vw;
             }
         }
         h2::before{
@@ -292,7 +335,7 @@ $color-secondary-border:#ffffff;
     }
     
     
-}}
+}
 
 
 
@@ -395,6 +438,12 @@ $color-secondary-border:#ffffff;
             max-height: 250px;
             max-width: 350px;
             box-sizing: content-box;
+            @media (min-width: 236px) and (max-width: 768px){
+                width: none;
+                height: 95vh;
+                width: 95vw;   
+                
+            }
 }
         ul{
             display: flex;
@@ -419,6 +468,12 @@ $color-secondary-border:#ffffff;
                 display: flex;
                 margin: 10px 15px;
                 align-items: center;
+                @media (min-width: 236px) and (max-width: 768px){
+                    width: none;
+                    height: 95vh;
+                    width: 95vw;   
+                    
+                }
                 
                 
             
@@ -429,6 +484,12 @@ $color-secondary-border:#ffffff;
                     justify-content: center;
                     width: 430px;
                     height: 270px;
+                    @media (min-width: 236px) and (max-width: 768px){
+                    
+                        
+                        width: 95vw;   
+                        
+                    }
                 }
                 .cover:hover{
                     transition: 0.3s;
@@ -451,6 +512,12 @@ $color-secondary-border:#ffffff;
                 flex-direction: row;
                 align-items: center;
                 justify-content: center;
+                @media (min-width: 236px) and (max-width: 768px){
+                   
+                   background-size: 95vw 50vh;
+                    width: 95vw;   
+                    
+                }
             }
             .medicenter{
                 background-image: url(../images/medicenter.png);
@@ -497,11 +564,13 @@ $color-secondary-border:#ffffff;
 aside{
     display: flex;
     flex-direction: column;
+    border-top: 1px $secondary-color solid;
     z-index: 2;
     img{
         position: relative;
 
         width: 25px;
+
     }
     a{
         border: none!important;
@@ -522,8 +591,11 @@ aside{
         flex-direction: column;;
     }
     .img-perfil{
+        
         @media (min-width: 236px) and (max-width: 768px){
-            flex: 0;
+            flex: 1;
+            position: absolute;
+            align-self: center;
         }
     }
     .logo{
@@ -565,13 +637,14 @@ aside{
         height: max-content;
         @media (min-width: 236px) and (max-width: 768px){
            flex-direction: row;
+           flex: none;
         }
         .chamada{
             font-family: type;
             position: relative;
             display: flex;
             flex-direction: column;
-    
+            text-align: center;
             align-items: center;
             justify-content: center;
             p{
@@ -585,9 +658,12 @@ aside{
         h2{
             font-size: 3em;
             color: #fff;
-            text-align:center;
-            justify-self: flex-end;
-            align-self: flex-end;
+            text-align: center;
+            font-size: calc(20px + 2vw);
+            @media (min-width: 236px) and (max-width: 768px){
+                font-size: 25px;
+
+            }
             
 
         }
@@ -614,7 +690,11 @@ aside{
             border-radius: 5px;
             font-family: type;
             text-align: center;
-        
+            @media (min-width: 236px) and (max-width: 768px){
+                font-size: 25px;
+                
+                
+            }
             
         }
             #sobreBtn{
@@ -622,13 +702,19 @@ aside{
                 color: #fff;
                 text-shadow: $secondary-color 1px 2px 3px;
                 transition: linear 1s;
-                
+                border: 1px solid $accent-color;
             }
             
             #projetosBtn{
             box-shadow:  rgba(0, 0, 0, 0.466) 1px 1px 5px 0.1px;
             text-shadow: $secondary-color 1px 2px 3px;
             color: $accent-color;
+            
+            @media (min-width: 236px) and (max-width: 768px){
+                box-shadow: white 0px 0px 0px;
+                border: 1px solid rgba(0, 0, 0, 0.466);
+                 
+            }
             
             }
             

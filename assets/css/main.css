@@ -5,12 +5,6 @@
           box-sizing: border-box;
 }
 
-@media (width: 800px) {
-  * {
-    background-color: #26D463;
-  }
-}
-
 .show_barra_titulo {
   -webkit-animation: show_barra 1s linear;
           animation: show_barra 1s linear;
@@ -69,9 +63,16 @@
           flex-direction: column;
   color: #ffffff;
   min-height: 100vh;
+  min-width: 100vw;
   text-align: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media (min-width: 236px) and (max-width: 768px) {
+  .quem .container {
+    width: none;
+  }
 }
 
 .quem #barra-superior-sobre {
@@ -83,6 +84,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -126,8 +128,17 @@
 }
 
 .quem .home_img #sobre {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
   padding: 0px 15px;
   border-radius: 0px  5px;
+}
+
+@media (min-width: 236px) and (max-width: 768px) {
+  .quem .home_img #sobre {
+    padding: 0px 0px;
+  }
 }
 
 .quem .home_img #perfil {
@@ -158,6 +169,12 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    width: 100vw;
   }
 }
 
@@ -171,7 +188,6 @@
   margin: 0px 0px;
   border-radius: 100px;
   background-color: #ffcc74;
-  font-size: 20px;
   font-family: type;
   text-decoration: none;
 }
@@ -208,9 +224,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -221,7 +236,7 @@
   border: 1px #212736 solid;
 }
 
-.quem .outros {
+.outros {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -244,7 +259,7 @@
   height: 300px;
 }
 
-.quem .habilidades {
+.habilidades {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -258,7 +273,7 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  width: 98vw;
+  width: vw;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -269,11 +284,17 @@
   color: #fff;
 }
 
-.quem .habilidades p {
+@media (min-width: 236px) and (max-width: 990px) {
+  .habilidades {
+    max-width: 98vw;
+  }
+}
+
+.habilidades p {
   margin-bottom: 5px;
 }
 
-.quem .habilidades .titulo {
+.habilidades .titulo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -286,12 +307,12 @@
           align-items: center;
 }
 
-.quem .habilidades .titulo img {
+.habilidades .titulo img {
   width: 20px;
   padding-top: 2px;
 }
 
-.quem .habilidades .idiomas {
+.habilidades .idiomas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -315,13 +336,13 @@
   height: 300px;
 }
 
-.quem .habilidades h3 {
+.habilidades h3 {
   font-size: 20px;
   color: #fff;
   font-family: type;
 }
 
-.quem .habilidades h2 {
+.habilidades h2 {
   position: relative;
   color: #ffcc74;
   font-family: type;
@@ -329,7 +350,7 @@
   text-shadow: 1px 2px 3px #424242;
 }
 
-.quem .habilidades div {
+.habilidades div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -347,13 +368,19 @@
       flex-wrap: wrap;
 }
 
-.quem .habilidades svg {
+@media (min-width: 236px) and (max-width: 990px) {
+  .habilidades div {
+    width: 98vw;
+  }
+}
+
+.habilidades svg {
   width: 98px;
   height: 98px;
   padding: 15px;
 }
 
-.quem .habilidades .css, .quem .habilidades .html, .quem .habilidades .js, .quem .habilidades .ingles {
+.habilidades .css, .habilidades .html, .habilidades .js, .habilidades .ingles {
   max-width: 98px;
   max-height: 98px;
   border: 5px #212736 solid;
@@ -361,14 +388,22 @@
   margin: 10px;
 }
 
-@media (min-width: 236px) and (max-width: 768px) {
-  .quem .habilidades .css, .quem .habilidades .html, .quem .habilidades .js, .quem .habilidades .ingles {
-    max-width: 50px;
-    max-height: 50px;
+@media (min-width: 236px) and (max-width: 990px) {
+  .habilidades .css, .habilidades .html, .habilidades .js, .habilidades .ingles {
+    max-width: 90px;
+    max-height: 90px;
   }
 }
 
-.quem .nome {
+@media (min-width: 236px) and (max-width: 990px) {
+  .habilidades .tecnologias, .habilidades .idiomas, .habilidades .outros {
+    height: 400px;
+    width: 300px;
+    margin-bottom: 15px;
+  }
+}
+
+.nome {
   min-width: 400px;
   max-width: 800px;
   color: #fff;
@@ -384,30 +419,40 @@
   margin-bottom: 5px;
 }
 
-.quem .nome span {
+@media (min-width: 236px) and (max-width: 1200px) {
+  .nome {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-width: 100%;
+    max-width: 230px;
+    padding: 15px;
+  }
+}
+
+.nome span {
   color: #ffcc74;
 }
 
-.quem .nome p {
-  width: 440px;
+.nome p {
   font-size: 20px;
   text-align: justify;
 }
 
-@media (min-width: 236px) and (max-width: 768px) {
-  .quem .nome p {
-    text-align: center;
-  }
-}
-
-.quem .nome div {
+.nome div {
   position: relative;
-  width: 440px;
   margin: 10px 0px;
   text-align: left;
 }
 
-.quem .nome h2 {
+.nome h2 {
   font-size: 30px;
   text-align: left;
   position: relative;
@@ -416,12 +461,13 @@
 }
 
 @media (min-width: 236px) and (max-width: 768px) {
-  .quem .nome h2 {
+  .nome h2 {
     text-align: center;
+    max-width: 100vw;
   }
 }
 
-.quem .nome h2::before {
+.nome h2::before {
   position: absolute;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -431,7 +477,7 @@
   background-color: #ffcc74;
 }
 
-.quem .nome div {
+.nome div {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -548,6 +594,14 @@
           box-sizing: content-box;
 }
 
+@media (min-width: 236px) and (max-width: 768px) {
+  #projetos .project-cards section {
+    width: none;
+    height: 95vh;
+    width: 95vw;
+  }
+}
+
 #projetos .project-cards ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -590,6 +644,14 @@
           align-items: center;
 }
 
+@media (min-width: 236px) and (max-width: 768px) {
+  #projetos .project-cards ul li {
+    width: none;
+    height: 95vh;
+    width: 95vw;
+  }
+}
+
 #projetos .project-cards ul li .cover {
   background-color: rgba(0, 0, 0, 0.705);
   display: -webkit-box;
@@ -603,6 +665,12 @@
           justify-content: center;
   width: 430px;
   height: 270px;
+}
+
+@media (min-width: 236px) and (max-width: 768px) {
+  #projetos .project-cards ul li .cover {
+    width: 95vw;
+  }
 }
 
 #projetos .project-cards ul li .cover:hover {
@@ -634,6 +702,13 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (min-width: 236px) and (max-width: 768px) {
+  #projetos .project-cards ul .medicenter, #projetos .project-cards ul .wind, #projetos .project-cards ul .jesus {
+    background-size: 95vw 50vh;
+    width: 95vw;
+  }
 }
 
 #projetos .project-cards ul .medicenter {
@@ -691,6 +766,7 @@ aside {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border-top: 1px #212736 solid;
   z-index: 2;
 }
 
@@ -734,9 +810,13 @@ aside a {
 
 @media (min-width: 236px) and (max-width: 768px) {
   .sobre .img-perfil {
-    -webkit-box-flex: 0;
-        -ms-flex: 0;
-            flex: 0;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    position: absolute;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 
@@ -809,6 +889,9 @@ aside a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
   }
 }
 
@@ -822,6 +905,7 @@ aside a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -842,9 +926,13 @@ aside a {
   font-size: 3em;
   color: #fff;
   text-align: center;
-  justify-self: flex-end;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  font-size: calc(20px + 2vw);
+}
+
+@media (min-width: 236px) and (max-width: 768px) {
+  .sobre div h2 {
+    font-size: 25px;
+  }
 }
 
 .sobre div label {
@@ -881,12 +969,19 @@ aside a {
   text-align: center;
 }
 
+@media (min-width: 236px) and (max-width: 768px) {
+  .sobre div .botoes button {
+    font-size: 25px;
+  }
+}
+
 .sobre div .botoes #sobreBtn {
   background-color: #ffcc74;
   color: #fff;
   text-shadow: #212736 1px 2px 3px;
   -webkit-transition: linear 1s;
   transition: linear 1s;
+  border: 1px solid #ffcc74;
 }
 
 .sobre div .botoes #projetosBtn {
@@ -894,6 +989,14 @@ aside a {
           box-shadow: rgba(0, 0, 0, 0.466) 1px 1px 5px 0.1px;
   text-shadow: #212736 1px 2px 3px;
   color: #ffcc74;
+}
+
+@media (min-width: 236px) and (max-width: 768px) {
+  .sobre div .botoes #projetosBtn {
+    -webkit-box-shadow: white 0px 0px 0px;
+            box-shadow: white 0px 0px 0px;
+    border: 1px solid rgba(0, 0, 0, 0.466);
+  }
 }
 
 .sobre div a {

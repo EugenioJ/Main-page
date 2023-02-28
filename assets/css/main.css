@@ -5,12 +5,6 @@
           box-sizing: border-box;
 }
 
-.show_barra_titulo {
-  -webkit-animation: show_barra 1s linear;
-          animation: show_barra 1s linear;
-  overflow: hidden;
-}
-
 .show {
   -webkit-animation: go-back 0.5s linear;
           animation: go-back 0.5s linear;
@@ -48,8 +42,8 @@
   padding: 5px;
   height: 35px;
   border: none;
-  left: 0px;
-  top: 10%;
+  left: 30px;
+  top: 0%;
 }
 
 .quem {
@@ -180,14 +174,22 @@
   padding: 3px 1em;
   margin: 0px 0px;
   border-radius: 100px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   background-color: #ffcc74;
   max-height: 30px;
   font-family: type;
   text-decoration: none;
 }
 
-.quem .home_img .social img {
+.quem .home_img .social img, .quem .home_img .social svg {
   width: 15px;
+}
+
+.quem .home_img .social svg:hover path {
+  background-color: #26D463;
+  fill: #ffcc74;
 }
 
 .quem .home_img .social div {
@@ -230,6 +232,10 @@
   border: 1px #212736 solid;
 }
 
+.quem .tecnologias svg:hover .cor_SVG {
+  fill: #ffcc74;
+}
+
 .outros {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -239,13 +245,13 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: 250px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   border-radius: 5px;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: 1px #212736 solid;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -301,6 +307,11 @@
           align-items: center;
 }
 
+.habilidades .titulo h2 {
+  font-size: 2em;
+  padding: 5px;
+}
+
 .habilidades .titulo img {
   width: 20px;
   padding-top: 2px;
@@ -351,6 +362,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -562,6 +575,8 @@
   text-decoration: none;
   color: #ffcc74;
   border-bottom: 1px #212736 solid;
+  font-size: 2em;
+  padding: 5px;
 }
 
 #projetos .project-cards h2 {
@@ -603,10 +618,9 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 20px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   height: 100%;
 }
 
@@ -616,12 +630,20 @@
 
 #projetos .project-cards ul li:hover {
   scale: 1.1;
-  -webkit-transition: linear 0.5s;
-  transition: linear 0.5s;
+  -webkit-transition: linear 0.3s;
+  transition: linear 0.3s;
+}
+
+#projetos .project-cards ul li:hover h2 {
+  display: none;
+}
+
+#projetos .project-cards ul li:hover .down-bar {
+  display: block;
 }
 
 #projetos .project-cards ul li {
-  max-width: 430px;
+  max-width: 330px;
   max-height: 270px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -630,6 +652,30 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: 5px;
+}
+
+#projetos .project-cards ul li .down-bar {
+  display: none;
+  background-color: #21273676;
+  width: 100%;
+  text-align: center;
+  color: white;
+  height: 50px;
+  -ms-flex-item-align: last baseline;
+      -ms-grid-row-align: last baseline;
+      align-self: last baseline;
+  border-radius: 0px 0px 5px 5px;
+}
+
+#projetos .project-cards ul li .down-bar h3 {
+  padding: 0px;
+  margin: 0px;
+}
+
+#projetos .project-cards ul li .down-bar svg {
+  width: 30px;
+  height: 30px;
 }
 
 @media (min-width: 236px) and (max-width: 768px) {
@@ -651,7 +697,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 430px;
+  border-radius: 5px;
+  width: 330px;
+  border: 1px #212736 solid;
   height: 270px;
 }
 
@@ -675,7 +723,7 @@
 
 #projetos .project-cards ul .medicenter, #projetos .project-cards ul .wind, #projetos .project-cards ul .jesus {
   background-position: center center;
-  background-size: 430px 270px;
+  background-size: 330px 270px;
   background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;

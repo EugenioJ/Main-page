@@ -164,13 +164,14 @@ $color-secondary-border:#ffffff;
         margin-right:10px;
         border: 1px $secondary-color solid;
         
-        svg:hover .cor_SVG{
-            fill: $accent-color
+        .css:hover, .css:hover .cor_SVG, .html:hover, .html:hover .cor_SVG, .js:hover {
+           
+
         }
     }
         
     }
-    
+
     .outros{
         display: flex;
             flex-direction: column;
@@ -198,6 +199,20 @@ $color-secondary-border:#ffffff;
         } 
         p{
             margin-bottom: 5px;
+        }
+        .skill-itens:hover{
+            border-color: $accent-color;
+           
+        
+        h3{
+            color: $accent-color
+        }
+        div{
+            border-color: $accent-color;
+        }
+        .cor_SVG{
+            fill: $accent-color;
+        }
         }
         .titulo{
             display: flex;
@@ -472,6 +487,8 @@ $color-secondary-border:#ffffff;
                 }
                 .down-bar{
                     display: block;
+                    color: $accent-color;
+
                 }
                 
                 
@@ -487,6 +504,7 @@ $color-secondary-border:#ffffff;
                 display: none;
                 background-color:#21273676;
                 width: 100%;
+                border-top: 1px #212736 solid ;
                 text-align: center;
                 color: white;
                 height:50px;

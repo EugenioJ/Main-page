@@ -232,10 +232,6 @@
   border: 1px #212736 solid;
 }
 
-.quem .tecnologias svg:hover .cor_SVG {
-  fill: #ffcc74;
-}
-
 .outros {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -292,6 +288,22 @@
 
 .habilidades p {
   margin-bottom: 5px;
+}
+
+.habilidades .skill-itens:hover {
+  border-color: #ffcc74;
+}
+
+.habilidades .skill-itens:hover h3 {
+  color: #ffcc74;
+}
+
+.habilidades .skill-itens:hover div {
+  border-color: #ffcc74;
+}
+
+.habilidades .skill-itens:hover .cor_SVG {
+  fill: #ffcc74;
 }
 
 .habilidades .titulo {
@@ -640,6 +652,7 @@
 
 #projetos .project-cards ul li:hover .down-bar {
   display: block;
+  color: #ffcc74;
 }
 
 #projetos .project-cards ul li {
@@ -659,6 +672,7 @@
   display: none;
   background-color: #21273676;
   width: 100%;
+  border-top: 1px #212736 solid;
   text-align: center;
   color: white;
   height: 50px;

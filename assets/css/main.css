@@ -232,6 +232,10 @@
   border: 1px #212736 solid;
 }
 
+.quem .tecnologias .tecnologias:focus {
+  background-color: #26D463;
+}
+
 .outros {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -577,6 +581,22 @@
   font-family: type;
 }
 
+#projetos h3 {
+  font-size: 1.8em;
+  color: #ffcc74;
+}
+
+#projetos h3::after {
+  content: "";
+  width: 150px;
+  height: 1px;
+  background-color: #CFD450;
+}
+
+#projetos h4 {
+  font-size: 30px;
+}
+
 #projetos .titulo {
   width: 100vw;
 }
@@ -591,11 +611,11 @@
   padding: 5px;
 }
 
-#projetos .project-cards h2 {
+#projetos .project_cards h2, #projetos .project_cards h4 {
   color: white;
 }
 
-#projetos .project-cards section {
+#projetos .project_cards section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -610,14 +630,14 @@
 }
 
 @media (min-width: 236px) and (max-width: 768px) {
-  #projetos .project-cards section {
+  #projetos .project_cards section {
     width: none;
     height: 95vh;
     width: 95vw;
   }
 }
 
-#projetos .project-cards ul {
+#projetos .project_cards ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -636,26 +656,26 @@
   height: 100%;
 }
 
-#projetos .project-cards ul a {
+#projetos .project_cards ul a {
   text-decoration: none;
 }
 
-#projetos .project-cards ul li:hover {
+#projetos .project_cards ul li:hover {
   scale: 1.1;
   -webkit-transition: linear 0.3s;
   transition: linear 0.3s;
 }
 
-#projetos .project-cards ul li:hover h2 {
+#projetos .project_cards ul li:hover h4 {
   display: none;
 }
 
-#projetos .project-cards ul li:hover .down-bar {
+#projetos .project_cards ul li:hover .call_bar {
   display: block;
   color: #ffcc74;
 }
 
-#projetos .project-cards ul li {
+#projetos .project_cards ul li {
   max-width: 330px;
   max-height: 270px;
   display: -webkit-box;
@@ -668,7 +688,7 @@
   border-radius: 5px;
 }
 
-#projetos .project-cards ul li .down-bar {
+#projetos .project_cards ul li .call_bar {
   display: none;
   background-color: #21273676;
   width: 100%;
@@ -682,25 +702,26 @@
   border-radius: 0px 0px 5px 5px;
 }
 
-#projetos .project-cards ul li .down-bar h3 {
+#projetos .project_cards ul li .call_bar p {
+  font-size: 27px;
   padding: 0px;
   margin: 0px;
 }
 
-#projetos .project-cards ul li .down-bar svg {
+#projetos .project_cards ul li .call_bar svg {
   width: 30px;
   height: 30px;
 }
 
 @media (min-width: 236px) and (max-width: 768px) {
-  #projetos .project-cards ul li {
+  #projetos .project_cards ul li {
     width: none;
     height: 95vh;
     width: 95vw;
   }
 }
 
-#projetos .project-cards ul li .cover {
+#projetos .project_cards ul li .cover {
   background-color: rgba(0, 0, 0, 0.705);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -718,24 +739,24 @@
 }
 
 @media (min-width: 236px) and (max-width: 768px) {
-  #projetos .project-cards ul li .cover {
+  #projetos .project_cards ul li .cover {
     width: 95vw;
   }
 }
 
-#projetos .project-cards ul li .cover:hover {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+#projetos .project_cards ul li .cover:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
   cursor: pointer;
   background-color: rgba(245, 245, 245, 0);
 }
 
-#projetos .project-cards ul li .cover:hover h2 {
+#projetos .project_cards ul li .cover:hover h4 {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-#projetos .project-cards ul .medicenter, #projetos .project-cards ul .wind, #projetos .project-cards ul .jesus {
+#projetos .project_cards ul .medicenter, #projetos .project_cards ul .wind, #projetos .project_cards ul .jesus {
   background-position: center center;
   background-size: 330px 270px;
   background-repeat: no-repeat;
@@ -755,31 +776,31 @@
 }
 
 @media (min-width: 236px) and (max-width: 768px) {
-  #projetos .project-cards ul .medicenter, #projetos .project-cards ul .wind, #projetos .project-cards ul .jesus {
+  #projetos .project_cards ul .medicenter, #projetos .project_cards ul .wind, #projetos .project_cards ul .jesus {
     background-size: 95vw 50vh;
     width: 95vw;
   }
 }
 
-#projetos .project-cards ul .medicenter {
+#projetos .project_cards ul .medicenter {
   background-image: url(../images/medicenter.png);
 }
 
-#projetos .project-cards ul .medicenter .call {
+#projetos .project_cards ul .medicenter .call {
   display: none;
   height: 100%;
 }
 
-#projetos .project-cards ul .medicenter .call div, #projetos .project-cards ul .medicenter .call button {
+#projetos .project_cards ul .medicenter .call div, #projetos .project_cards ul .medicenter .call button {
   height: 100%;
   border: none;
 }
 
-#projetos .project-cards ul .wind {
+#projetos .project_cards ul .wind {
   background-image: url(../images/wind.png);
 }
 
-#projetos .project-cards ul .jesus {
+#projetos .project_cards ul .jesus {
   background-image: url(../images/jesusfreak.png);
 }
 

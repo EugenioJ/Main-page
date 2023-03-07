@@ -168,6 +168,9 @@ $color-secondary-border:#ffffff;
            
 
         }
+    .tecnologias:focus{
+        background-color: #26D463;
+    }
     }
         
     }
@@ -438,7 +441,22 @@ $color-secondary-border:#ffffff;
     display: none;
     align-items: center;
     font-family: type;
-    
+    h3{
+        font-size: 1.8em;
+        color: $accent-color;
+                     
+        }
+    h3::after{
+        content: "";
+        width: 150px;
+        height: 1px;
+        background-color: #CFD450;
+        
+
+    }
+    h4{
+        font-size: 30px;
+    }
     .titulo{
         width: 100vw;
         h2{
@@ -450,10 +468,11 @@ $color-secondary-border:#ffffff;
             font-size: 2em;
             padding: 5px;
         }
-}
-    .project-cards{
        
-        h2{
+}
+    .project_cards{
+       
+        h2, h4{
             color:white;
         }
         section{
@@ -482,10 +501,10 @@ $color-secondary-border:#ffffff;
            li:hover{
                 scale: 1.1;
                 transition: linear 0.3s;
-                h2{
+                h4{
                     display: none;
                 }
-                .down-bar{
+                .call_bar{
                     display: block;
                     color: $accent-color;
 
@@ -500,26 +519,25 @@ $color-secondary-border:#ffffff;
                 margin: 10px 15px;
                 align-items: center;
                 border-radius: 5px;
-                .down-bar{
-                display: none;
-                background-color:#21273676;
-                width: 100%;
-                border-top: 1px #212736 solid ;
-                text-align: center;
-                color: white;
-                height:50px;
-                align-self:last baseline;
-                border-radius: 0px 0px 5px 5px;
-                h3{
-                    padding: 0px;
-                    margin: 0px;
-                }
-                svg{
-                    width: 30px;
-                    height: 30px;
-                }
-                
-
+                .call_bar{
+                    display: none;
+                    background-color:#21273676;
+                    width: 100%;
+                    border-top: 1px #212736 solid ;
+                    text-align: center;
+                    color: white;
+                    height:50px;
+                    align-self:last baseline;
+                    border-radius: 0px 0px 5px 5px;
+                    p{
+                        font-size: 27px;
+                        padding: 0px;
+                        margin: 0px;
+                    }
+                    svg{
+                        width: 30px;
+                        height: 30px;
+                    }
                 }
                 @media (min-width: 236px) and (max-width: 768px){
                     width: none;
@@ -527,8 +545,6 @@ $color-secondary-border:#ffffff;
                     width: 95vw;   
                     
                 }
-                
-                
             
                 .cover{
                     background-color: rgba(0, 0, 0, 0.705);
@@ -540,20 +556,18 @@ $color-secondary-border:#ffffff;
                     border: 1px #212736 solid;
                     height: 270px;
                     @media (min-width: 236px) and (max-width: 768px){
-                    
-                        
                         width: 95vw;   
                         
                     }
                 }
                 .cover:hover{
-                    transition: 0.3s;
+                    transition: 1s;
                     cursor: pointer;
                     background-color: rgba(245, 245, 245, 0);
     
-                    h2{
+                    h4{
                         transition: 0.3s;
-                        
+                    
                     }
                 }
                 
